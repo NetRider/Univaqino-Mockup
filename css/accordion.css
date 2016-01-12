@@ -24,3 +24,23 @@
     margin-left: 30px;
     position: absolute;
 }
+
+.cardImage {
+    width: 50%;
+	height: 50%;
+}
+
+.labelCard {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size: 1.1em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
+.textCard {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size: 1em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
