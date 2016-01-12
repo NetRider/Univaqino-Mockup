@@ -42,10 +42,15 @@ font-size: 0.7em;
 	font-variant: normal;
 	font-weight: 500;
 }
+
 .textCard {
 	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 	font-size: 1em;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
+}
+
+.circle {
+	
 }
