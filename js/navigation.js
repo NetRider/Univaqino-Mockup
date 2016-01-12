@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+	$("#myModalexample").toggle();
+	
 	$("#aulebar").on("click",function(){
 		impostaAule();
 	});

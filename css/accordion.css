@@ -11,6 +11,11 @@
 }
 
 /* Notifica non urgente */
+body, input, select, textarea, button, .ui-btn {
+font-size: 0.7em;
+    line-height: 1.8em;
+}
+
 #notification-green-polo>h3>a, #notification-green-edificio>h3>a, #notification-green-piano>h3>a {
 	background-color:green;
 	color: black;
@@ -23,4 +28,24 @@
 .icon-info:before {
     margin-left: 30px;
     position: absolute;
+}
+
+.cardImage {
+    width: 40%;
+	height: 40%;
+}
+
+.labelCard {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size: 1.1em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
+.textCard {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size: 1em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
 }
