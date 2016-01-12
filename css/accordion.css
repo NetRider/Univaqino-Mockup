@@ -1,0 +1,26 @@
+/* Notifica urgente */
+#notification-red-polo>h3>a, #notification-red-edificio>h3>a, #notification-red-piano>h3>a {
+	background-color:red;
+	color: white;
+}
+
+/* Notifica poco urgente */
+#notification-yellow-polo>h3>a, #notification-yellow-edificio>h3>a, #notification-yellow-piano>h3>a {
+	background-color:yellow;
+	color: black;
+}
+
+/* Notifica non urgente */
+#notification-green-polo>h3>a, #notification-green-edificio>h3>a, #notification-green-piano>h3>a {
+	background-color:green;
+	color: black;
+}
+
+.filter{
+	margin: 15px;
+}
+
+.icon-info:before {
+    margin-left: 30px;
+    position: absolute;
+}
