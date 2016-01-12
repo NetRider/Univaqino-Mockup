@@ -30,6 +30,7 @@
 	    	});
 		</script>
 		<script src="libs/jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
+
   	</head>
   	<body>
 
@@ -42,8 +43,8 @@
 			<!-- Accordion -->
 			<div class="filter">
 				<div class="segmented-control">
-				    <a class="control-item">Aule</a>
-				    <a class="control-item active">Follower</a>
+				    <a id="aulebar" class="control-item active">Aule</a>
+				    <a id="followerbar"class="control-item">Follower</a>
 				    <a class="control-item">Professori</a>
 					<a class="control-item">Uffici</a>
 		  		</div>
@@ -59,32 +60,6 @@
 
 						<div data-role="collapsible">
 				        	<h3>Piano 0</h3>
-							<div class="card">
-								<ul class="table-view">
-  									<li class="table-view-cell">
-			    						<a>
-			      							<span class="media-object pull-left icon icon-trash"></span>
-									    	<span class="media-body">Aula 0.1</span>
-											<span class="media-object pull-right icon icon-info"></span>
-									    </a>
-						  			</li>
-									<li class="table-view-cell">
-									    <a>
-									    	<span class="media-object pull-left icon icon-gear"></span>
-									      	<span class="media-body">Aula 0.2</span>
-											<span class="media-object pull-right icon icon-info"></span>
-
-									    </a>
-									</li>
-								  	<li class="table-view-cell">
-								    	<a>
-								      		<span class="media-object pull-left icon icon-pages"></span>
-								      		<span class="media-body">Aula 0.3</span>
-											<span class="media-object pull-right icon icon-info"></span>
-								    	</a>
-								  	</li>
-								</ul>
-							</div>
 				    	</div>
 
 						<div data-role="collapsible" >
@@ -99,6 +74,24 @@
 
 					<div data-role="collapsible">
 			        	<h3>Coppito 1</h3>
+
+						<div data-role="collapsible">
+				        	<h3>Piano 0</h3>
+							<div id="P0Coppito1">
+							</div>
+				    	</div>
+
+						<div data-role="collapsible" >
+				        	<h3>Piano 1</h3>
+							<div id="P1Coppito1">
+							</div>
+				    	</div>
+
+						<div data-role="collapsible">
+				        	<h3>Piano 2</h3>
+							<div id="P2Coppito1">
+							</div>
+				    	</div>
 			    	</div>
 
 					<div data-role="collapsible">
@@ -142,4 +135,6 @@
 			</a>
 		</nav>
   	</body>
+	<script src="js/navigation.js"></script>
+
 </html>
