@@ -25,9 +25,17 @@ font-size: 0.7em;
 	margin: 15px;
 }
 
-.icon-info:before {
-    margin-left: 30px;
-    position: absolute;
+.info{
+	margin-left:30%;
+}
+
+
+.circle {
+	vertical-align: middle;
+    background: red none repeat scroll 0 0;
+    border-radius: 55px;
+    height: 15px;
+    width: 15px;
 }
 
 .cardImage {
@@ -49,8 +57,4 @@ font-size: 0.7em;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
-}
-
-.circle {
-	
 }
