@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
 	$("#myModalexample").toggle();
-	
+
 	$("#aulebar").on("click",function(){
 		impostaAule();
 	});
@@ -20,6 +20,11 @@ function impostaAule()
 	$("#P2Coppito1").load("./AuleCoppito1.html #P2");
 	$(".active").removeClass("active");
 	$("#aulebar").addClass("active");
+	console.log("imposta modal");
+	$("#P0Coppito1").on("click","#openModal", function(){
+		console.log("sono qui");
+		$("#myModalexample").find("div.content").addClass("active");
+	});
 }
 
 function impostaFollowers()
