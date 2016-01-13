@@ -19,6 +19,7 @@
 		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.theme.min.css" rel="stylesheet">
 
 		<link href="css/accordion.css" rel="stylesheet">
+		<link href="css/profile.css" rel="stylesheet">
     	<!-- Include the compiled Ratchet JS -->
     	<script src="libs/ratchet-v2.0.2/js/ratchet.js"></script>
 		<script src="libs/jquery-1.12.0.min.js"></script>
@@ -36,67 +37,92 @@
 
 		<!-- Title bar -->
 		<header class="bar bar-nav">
-  			<h1 class="title">Profilo</h1>
+  			<h1 class="title">Matteo Polsinelli</h1>
 		</header>
 
 
-		<div class="content">
+		<div class="content spazio-nav">
 			<ul class="table-view">
-				<li class="card">
-					<img class="imageProfile" src="img/matteo.jpg">
-					<ul class="table-view">
-					  	<li class="table-view-cell media">
-						    <a class="navigate-right">
-						      <span class="media-object pull-left icon icon-person"></span>
-						      <div class="media-body">
-						        Polsinelli Matteo
+				<li class="card pulito">
+					<img class="imageProfile profilo-image" src="img/matteo.jpg">
+					  <span class="media-object pull-left  "><img class="email-icon" src="./img/email-icon.png"></span>
+						      <div class="media-body email-text">
+						        E-mail:  matteo.polsinelli@student.univaq.it
 						      </div>
-						    </a>
-					  	</li>
-					  	<li class="table-view-cell media">
+				</li>	    
+					  	
+				    
+				  
+			</ul>
+				  
+			<ul class="table-view">
+				  <li class="card pulito">
+					 
+					  	<ul class="table-view pulito">
+						<li class="table-view-cell pulito">
 						    <a class="navigate-right"  href="selectStatus.html" data-transition="slide-in">
 						      <span class="media-object pull-left icon icon-gear"></span>
 						      <div class="media-body">
 						        Stato Corrente: a lezione
 						      </div>
-						    </a>
-					  	</li>
-						<li class="table-view-cell media">
+						     </a>
+						</li>
+						
+						<li class="table-view-cell pulito">
+					    	<span class="media-object pull-left icon icon-pages"></span>
+					      	<div class="media-body">
+					        Posizione: coppito blocco 1 piano 2
+					      	</div>
+						</li>
+						</ul>
+					    
+						<ul class="table-view pulito">
+						  <li class="table-view-cell pulito">
+						
 							<a class="navigate-right"  href="selectPole.html" data-transition="slide-in">
 						    	<span class="media-object pull-left icon icon-pages"></span>
 						      	<div class="media-body">
 						        Polo apparteneza: Coppito
 						      	</div>
 						    </a>
-						</li>
-						<li class="table-view-cell media">
+						 </li>
+						 <li class="table-view-cell pulito">
+							<a class="navigate-right"  href="selectPole.html" data-transition="slide-in">
 						    	<span class="media-object pull-left icon icon-pages"></span>
 						      	<div class="media-body">
-						        Posizione: coppito blocco 1 piano 2
+						        Corsi seguiti
 						      	</div>
+							</a>
+						    
 						</li>
-					</ul>
-				</li>
-
-				<li class="card">
-					<ul class="table-view">
-					  	<li class="table-view-cell">
-					    	Gsp
-						    <div class="toggle">
-						    	<div class="toggle-handle"></div>
-						    </div>
-					  	</li>
-					  	<li class="table-view-cell">
-					    	Notifiche
-					    	<div class="toggle active">
-					      		<div class="toggle-handle"></div>
-					    	</div>
-					  	</li>
-					</ul>
-				</li>
-			</ul>
-
-		</div>
+							
+						</ul>
+							
+					</li>
+				</ul>
+			</div>
+			<nav class="bar bar-tab">
+	  			<a class="tab-item active" href="#">
+	    			<span class="icon icon-home"></span>
+	    			<span class="tab-label">Home</span>
+	  			</a>
+				<a class="tab-item" href="#">
+					<span class="icon icon-person"></span>
+				    <span class="tab-label">Profile</span>
+				</a>
+				<a class="tab-item" href="#">
+					<span class="icon icon-star-filled"></span>
+				    <span class="tab-label">Favorites</span>
+				</a>
+				<a class="tab-item" href="#">
+				    <span class="icon icon-search"></span>
+				    <span class="tab-label">Search</span>
+				</a>
+				<a class="tab-item" href="#">
+					<span class="icon icon-gear"></span>
+				    <span class="tab-label">Settings</span>
+				</a>
+			</nav>
 
   	</body>
 	<script src="js/navigation.js"></script>

@@ -1,0 +1,27 @@
+.email-icon{
+	height:24px;
+	
+}
+
+.email-text{
+	font-weight:normal;
+}
+
+.title{
+	font-weight:bold;
+}
+
+.pulito{
+	border:none;
+}
+
+.profilo-image{
+	margin-bottom:10px;
+}
+
+.label-profile{
+	display:inline-block;
+}
+.spazio-nav{
+	margin-bottom:52px;
+}
