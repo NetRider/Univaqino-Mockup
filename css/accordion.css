@@ -39,8 +39,8 @@ font-size: 0.7em;
 }
 
 .cardImage {
-    width: 40%;
-	height: 40%;
+    width: 30%;
+	height: 30%;
 }
 
 .labelCard {
@@ -57,4 +57,37 @@ font-size: 0.7em;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
+}
+
+.univaqImage {
+    display: block;
+    margin: 0 auto;
+}
+
+.loginText {
+	text-align: center;
+}
+
+.loginForm {
+	margin: 15px;
+}
+
+.imageProfile {
+	height: 40%;
+	width: 40%;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+.profileCard {
+	margin: 20px;
+}
+
+.selectStatus {
+	height: 200px;
+}
+
+.selectStatusText {
+	text-align: center;
 }
