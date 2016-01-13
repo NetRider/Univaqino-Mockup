@@ -13,11 +13,26 @@ $( document ).ready(function() {
 	$("#P0Coppito1").on("click",".frecciaAula",function(){
 		$("#freccia_indietro").css("visibility","visible");
 		$("#contentoffcanvas").load("./schedaAula.html");
+		$("#titleNavigation").text("Aula");
         snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
 							$("#contentoffcanvas").innerHTML="";
 							snapper.close();
 							$("#freccia_indietro").css("visibility","hidden");
+							$("#titleNavigation").text("Navigation");
+						});
+	});
+
+	$("#P0Coppito1").on("click",".frecciaProfilo",function(){
+		$("#freccia_indietro").css("visibility","visible");
+		$("#contentoffcanvas").load("./profile.html");
+		$("#titleNavigation").text("Profilo");
+        snapper.expand("right");
+				$("#freccia_indietro").on("click",function(){
+							$("#contentoffcanvas").innerHTML="";
+							snapper.close();
+							$("#freccia_indietro").css("visibility","hidden");
+							$("#titleNavigation").text("Navigation");
 						});
 	});
 

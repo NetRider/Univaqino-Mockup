@@ -102,10 +102,17 @@ font-size: 0.7em;
 .selectStatusText {
 	text-align: center;
 }
+
 .imagePhoto {
 	height: 40%;
 	width: 95%;
 	margin-top: 10px;
 	margin-left: 10px;
+}
 
+.menuCalendar {
+	margin-top: 15%;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
