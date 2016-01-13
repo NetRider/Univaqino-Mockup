@@ -10,7 +10,7 @@ $( document ).ready(function() {
 		impostaFollowers();
 	});
 
-	$("#P0Coppito1").on("click","#frecciaAula",function(){
+	$("#P0Coppito1").on("click",".frecciaAula",function(){
 		$("#freccia_indietro").css("visibility","visible");
 		$("#contentoffcanvas").load("./schedaAula.html");
         snapper.expand("right");

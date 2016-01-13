@@ -30,13 +30,24 @@ font-size: 0.7em;
 }
 
 
-.circle {
+.aula_occupata {
 	vertical-align: middle;
     background: red none repeat scroll 0 0;
     border-radius: 55px;
     height: 15px;
     width: 15px;
 }
+
+.aula_libera {
+	vertical-align: middle;
+    background: green none repeat scroll 0 0;
+    border-radius: 55px;
+    height: 15px;
+    width: 15px;
+}
+
+
+
 
 .cardImage {
     width: 30%;
