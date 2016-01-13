@@ -14,14 +14,17 @@
     	<!-- Include the compiled Ratchet CSS -->
     	<link href="libs/ratchet-v2.0.2/css/ratchet.css" rel="stylesheet">
 
-
 		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.structure.min.css" rel="stylesheet">
 		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.theme.min.css" rel="stylesheet">
-
 		<link href="css/accordion.css" rel="stylesheet">
+		<link href="libs/SnapJs/snap.css" rel="stylesheet">
+
+
     	<!-- Include the compiled Ratchet JS -->
     	<script src="libs/ratchet-v2.0.2/js/ratchet.js"></script>
 		<script src="libs/jquery-1.12.0.min.js"></script>
+		<script src="libs/SnapJs/snap.min.js"></script>
+
 		<script>
 	    	$(document).bind('mobileinit',function(){
 	        $.mobile.changePage.defaults.changeHash = false;
@@ -36,20 +39,16 @@
 
 		<!-- Title bar -->
 		<header class="bar bar-nav">
+			<a id="freccia_indietro" class="icon icon-left-nav pull-left"></a>
+
   			<h1 class="title">Title</h1>
 		</header>
-
-
-		<div class="content">
-			<div id="myModalexample" class="modal">
-				<header class="bar bar-nav">
-					<a class="icon icon-close pull-right" href="#myModalexample"></a>
-					<h1 class="title">Modal</h1>
-				</header>
-				<div class="content">
-					<p class="content-padded">The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-				</div>
+		<div class="snap-drawers">
+			<div id="contentoffcanvas" class="snap-drawer snap-drawer-right">
 			</div>
+		</div>
+		<div id="contentmain" class="content snap-content">
+
 			<!-- Accordion -->
 			<div class="filter">
 				<div class="segmented-control">
@@ -146,5 +145,4 @@
 		</nav>
   	</body>
 	<script src="js/navigation.js"></script>
-
 </html>

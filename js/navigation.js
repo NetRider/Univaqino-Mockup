@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-	$("#myModalexample").toggle();
+	$("#freccia_indietro").css("visibility","hidden");
 
 	$("#aulebar").on("click",function(){
 		impostaAule();
@@ -10,7 +10,22 @@ $( document ).ready(function() {
 		impostaFollowers();
 	});
 
+	$("#P0Coppito1").on("click","#frecciaAula",function(){
+		$("#freccia_indietro").css("visibility","visible");
+		$("#contentoffcanvas").load("./schedaAula.html");
+        snapper.expand("right");
+				$("#freccia_indietro").on("click",function(){
+							$("#contentoffcanvas").innerHTML="";
+							snapper.close();
+							$("#freccia_indietro").css("visibility","hidden");
+						});
+	});
+
 	impostaAule();
+});
+
+var snapper = new Snap({
+    element: document.getElementById('contentmain'),
 });
 
 function impostaAule()
