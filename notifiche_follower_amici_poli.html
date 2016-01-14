@@ -14,18 +14,15 @@
     	<!-- Include the compiled Ratchet CSS -->
     	<link href="libs/ratchet-v2.0.2/css/ratchet.css" rel="stylesheet">
 
+
 		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.structure.min.css" rel="stylesheet">
 		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.theme.min.css" rel="stylesheet">
+
 		<link href="css/accordion.css" rel="stylesheet">
-		<link href="libs/SnapJs/snap.css" rel="stylesheet">
-		<link href="css/followers.css" rel="stylesheet">
-
-
+		<link href="css/profile.css" rel="stylesheet">
     	<!-- Include the compiled Ratchet JS -->
     	<script src="libs/ratchet-v2.0.2/js/ratchet.js"></script>
 		<script src="libs/jquery-1.12.0.min.js"></script>
-		<script src="libs/SnapJs/snap.min.js"></script>
-
 		<script>
 	    	$(document).bind('mobileinit',function(){
 	        $.mobile.changePage.defaults.changeHash = false;
@@ -34,37 +31,41 @@
 	    	});
 		</script>
 		<script src="libs/jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
-		<script src="js/filtrofollower.js"></script>
 
   	</head>
   	<body>
-
 		<!-- Title bar -->
 		<header class="bar bar-nav">
-			<a id="freccia_indietro" class="icon icon-left-nav pull-left"></a>
-  			<h1 id= "titleNavigation" class="titleNavigation">Followers</h1>
+			<a class="icon icon-left-nav pull-left" href="notifiche_follower.html"></a>
+  			<h1 class="title">Notifiche</h1>
 		</header>
-		<div class="snap-drawers">
-			<div id="contentoffcanvas" class="snap-drawer snap-drawer-right">
+
+		<div class="content">
+			<div class="card">
+				<ul class="table-view">
+					<li class="table-view-cell table-view-divider">
+					    Poli
+					</li>
+
+					<li class="table-view-cell">
+					    Coppito
+					    <div class="toggle">
+					    	<div class="toggle-handle"></div>
+					    </div>
+					</li>
+
+					<li class="table-view-cell">
+					    Roio
+					    <div class="toggle active">
+					      	<div class="toggle-handle"></div>
+					    </div>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div id="contentmain" class="content snap-content">
 
-			<div class="filter">
-				<div class="segmented-control">
-				    <a id="followerAmici" class="control-item active">Amici</a>
-				    <a id="followerProf" class="control-item">Professori</a>
-		  		</div>
-			</div>
-
-			<!-- Lista follower Amici -->
-			<div id="lista">
-			</div>
-
-			
-		<!-- Tab Bar -->
 		<nav class="bar bar-tab">
-  			<a class="tab-item" href="#">
+  			<a class="tab-item active" href="#">
     			<span class="icon icon-home"></span>
     			<span class="tab-label">Home</span>
   			</a>
@@ -76,7 +77,7 @@
 				<span class="icon icon-search"></span>
 			    <span class="tab-label">Cerca</span>
 			</a>
-			<a class="tab-item active" href="#">
+			<a class="tab-item" href="#">
 				<span class="media-object">
 					<img src="img/followers.png" class="followersImage">
 				</span>
