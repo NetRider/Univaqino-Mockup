@@ -25,15 +25,15 @@ $( document ).ready(function() {
 
 	$("#P0Coppito1").on("click",".frecciaProfilo",function(){
 		$("#freccia_indietro").css("visibility","visible");
-		$("#contentoffcanvas").load("./profile.html");
+		$("#contentoffcanvas").load("./profile_visitato.html");
 		$("#titleNavigation").text("Profilo");
         snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
-							$("#contentoffcanvas").innerHTML="";
-							snapper.close();
-							$("#freccia_indietro").css("visibility","hidden");
-							$("#titleNavigation").text("Navigation");
-						});
+					$("#contentoffcanvas").innerHTML="";
+					snapper.close();
+					$("#freccia_indietro").css("visibility","hidden");
+					$("#titleNavigation").text("Navigation");
+				});
 	});
 
 	impostaAule();
