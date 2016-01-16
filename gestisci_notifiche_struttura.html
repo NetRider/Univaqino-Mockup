@@ -19,6 +19,7 @@
 		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.theme.min.css" rel="stylesheet">
 
 		<link href="css/accordion.css" rel="stylesheet">
+		<link href="css/profile.css" rel="stylesheet">
     	<!-- Include the compiled Ratchet JS -->
     	<script src="libs/ratchet-v2.0.2/js/ratchet.js"></script>
 		<script src="libs/jquery-1.12.0.min.js"></script>
@@ -35,39 +36,66 @@
   	<body>
 		<!-- Title bar -->
 		<header class="bar bar-nav">
-  			<h1 class="title">Menu</h1>
+  			<h1 class="title">Notifiche</h1>
 		</header>
 
 		<div class="content">
+			<div class="card">
+				<ul class="table-view">
+					<li class="table-view-cell table-view-divider">
+					    Status Notifiche
+					</li>
 
-			<a href="lista_poli_per_gestione.html">
-				<button class="btn btn-primary btn-block prova">
-					<span class="icon icon-gear"></span>
-					Gestione Poli
-				</button>
-			</a>
+					<li class="table-view-cell">
+					    Pausa
+					    <div class="toggle">
+					    	<div class="toggle-handle"></div>
+					    </div>
+					</li>
 
-			<button class="btn btn-positive btn-block">
-				<span class="icon icon-list"></span>
-				Cronologia Notifiche
-			</button>
+					<li class="table-view-cell">
+					    Lezione
+					    <div class="toggle active">
+					      	<div class="toggle-handle"></div>
+					    </div>
+					</li>
 
+					<li class="table-view-cell">
+						Ricevimento
+					    <div class="toggle">
+					    	<div class="toggle-handle"></div>
+					    </div>
+					</li>
+				</ul>
+			</div>
 
-			<a href="selezionaProfAvvistamento.html">
-				<button class="btn btn-negative btn-block">
-					<span class="icon icon-search"></span>
-					Avvista Prof
-				</button>
-			</a>
+			<div class="card">
+				<ul class="table-view">
+					<li class="table-view-cell">
+					    Attiva Notifiche
+					</li>
 
-			<button class="btn btn-negative btn-block">
-				<span class="icon icon-search"></span>
-				Log Out
-			</button>
+					<li class="table-view-cell">
+					    Nel mio edificio
+					    <div class="toggle">
+					    	<div class="toggle-handle"></div>
+					    </div>
+					</li>
+
+					<li class="table-view-cell">
+						<a class="navigate-right">
+							<span class="media-object pull-left icon icon-pages"></span>
+							<div class="media-body">
+							Altri poli
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 
 		<nav class="bar bar-tab">
-  			<a class="tab-item" href="navigation.html">
+  			<a class="tab-item active">
     			<span class="icon icon-home"></span>
     			<span class="tab-label">Home</span>
   			</a>
@@ -85,7 +113,7 @@
 				</span>
 			    <span class="tab-label">Followers</span>
 			</a>
-			<a class="tab-item active" href="#">
+			<a class="tab-item" href="#">
 				<span class="icon icon-bars"></span>
 			    <span class="tab-label">Menu</span>
 			</a>

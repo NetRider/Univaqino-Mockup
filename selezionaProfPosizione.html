@@ -126,7 +126,21 @@
 			    <span class="tab-label">Menu</span>
 			</a>
 		</nav>
+
+		<script>
+		console.log("profWathc.js");
+		$("#togglePosition").on("toggle",function(){
+			if($("#togglePosition").hasClass("active"))
+			{
+				$("#formGps").show();
+				$("#formNormal").hide();
+
+			}else {
+				$("#formGps").hide();
+				$("#formNormal").show();
+			}
+		});
+		</script>
   	</body>
-	<script src="js/profWatch.js"></script>
 
 </html>
