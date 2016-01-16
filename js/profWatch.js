@@ -13,7 +13,6 @@ function toggleStatus()
 		$("#formGps").show();
 		$("#formNormal").hide();
 
-
 	}else {
 		$("#formGps").hide();
 		$("#formNormal").show();
