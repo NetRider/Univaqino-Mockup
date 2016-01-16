@@ -25,7 +25,7 @@ $( document ).ready(function() {
 
 	$("#P0Coppito1").on("click",".frecciaProfilo",function(){
 		$("#freccia_indietro").css("visibility","visible");
-		$("#contentoffcanvas").load("./profile_visitato.html");
+		$("#contentoffcanvas").load("./profile_visitato_from_navigation.html");
 		$("#titleNavigation").text("Profilo");
         snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
