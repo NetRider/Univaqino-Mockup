@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(function() {
 
 	$("#freccia_indietro").css("visibility","hidden");
 

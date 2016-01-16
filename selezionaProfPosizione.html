@@ -12,19 +12,19 @@
     	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     	<!-- Include the compiled Ratchet CSS -->
-    	<link href="libs/ratchet-v2.0.2/css/ratchet.css" rel="stylesheet">
 
-		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.structure.min.css" rel="stylesheet">
-		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.theme.min.css" rel="stylesheet">
+		<link href="libs/ratchet-v2.0.2/css/ratchet.css" rel="stylesheet">
+
 		<link href="css/accordion.css" rel="stylesheet">
 		<link href="libs/SnapJs/snap.css" rel="stylesheet">
-		<link href="css/followers.css" rel="stylesheet">
 
 
     	<!-- Include the compiled Ratchet JS -->
     	<script src="libs/ratchet-v2.0.2/js/ratchet.js"></script>
 		<script src="libs/jquery-1.12.0.min.js"></script>
 		<script src="libs/SnapJs/snap.min.js"></script>
+		<script src="js/profWatch.js"></script>
+
 
 		<script>
 	    	$(document).bind('mobileinit',function(){
@@ -40,39 +40,66 @@
 
 		<!-- Title bar -->
 		<header class="bar bar-nav">
-			<a id="freccia_indietro" class="icon icon-left-nav pull-left"></a>
-  			<h2 id= "titleNavigation" class="titleNavigation">Seleziona Professori</h2>
+			<a class="icon icon-left-nav pull-left" href="selezionaProfAvvistamento.html"></a>
+  			<h2 class="titleNavigation">Seleziona Posizione</h2>
 		</header>
-		<div class="snap-drawers">
-			<div id="contentoffcanvas" class="snap-drawer snap-drawer-right">
-			</div>
-		</div>
-		<div id="contentmain" class="content snap-content">
-			<div class="card">
-	  			<ul class="table-view">
-	    			<li class="table-view-cell table-view-divider">Professori</li>
 
-	    			<li class="table-view-cell media">
-			    		<a class="navigate-right">
-				      		<img class="media-object pull-left cardImage" src="img/manes.jpg">
-							<div class="media-body">Costanzo Manes</div>
-							<div>
-						        <span class="labelCard">Status: </span>
-								<span class="textCard">A lezione</span>
-					      	</div>
-			    		</a>
-			  		</li>
-	    			<li class="table-view-cell media">
-			    		<a class="navigate-right">
-				      		<img class="media-object pull-left cardImage" src="img/pepe.jpg">
-							<div class="media-body">Pierdomenico Pepe</div>
-							<div>
-						        <span class="labelCard">Status: </span>
-								<span class="textCard">A lezione</span>
-					      	</div>
-			    		</a>
-			  		</li>
-	  			</ul>
+		<div class="content">
+			<div class="card">
+				<ul class="table-view">
+				 	<li class="table-view-cell">
+						Usa la mia posizione
+						<div class="toggle active" id="togglePosition">
+	 						<div class="toggle-handle"></div>
+   						</div>
+				  	</li>
+			  	</ul>
+			</div>
+			<div class="card">
+			<form class="input-group" id="formGps">
+		  		<div class="input-row">
+			    	<label>Polo</label>
+			    	<input type="text" placeholder="Coppito">
+		  		</div>
+		  		<div class="input-row">
+				    <label>Edificio</label>
+				    <input type="email" placeholder="Blocco 1">
+		  		</div>
+				<div class="input-row">
+					<label>Piano</label>
+				    <input type="text" placeholder="Terzo">
+				</div>
+				<div class="input-row">
+					<label>Luogo</label>
+				    <input type="text" placeholder="Sconosciuto">
+				</div>
+				<button class="btn btn-positive btn-block">Segnala</button>
+			  </form>
+			  <form class="input-group" id="formNormal" hidden>
+				  <ul class="table-view">
+				    <li class="table-view-cell">
+				      <a class="navigate-right">
+				        Polo: Coppito
+				      </a>
+				    </li>
+				    <li class="table-view-cell">
+				      <a class="navigate-right">
+				        Edificio: sconosciuto
+				      </a>
+				    </li>
+				    <li class="table-view-cell">
+				      <a class="navigate-right">
+				        Piano: sconosciuto
+				      </a>
+				    </li>
+					<li class="table-view-cell">
+				      <a class="navigate-right">
+				        Luogo: sconosciuto
+				      </a>
+				    </li>
+				  </ul>
+  				<button class="btn btn-positive btn-block">Segnala</button>
+  			  </form>
 			</div>
 		</div>
 		<!-- Tab Bar -->
