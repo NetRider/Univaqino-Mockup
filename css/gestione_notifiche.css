@@ -1,0 +1,45 @@
+.btn{
+	width:90% !important;
+	height:20%
+}
+
+.ui-block-a{
+	width:20% !important
+}
+
+.ui-block-b{
+	width:80% !important
+}
+
+
+.ui-block-a-button{
+	width:20% !important
+}
+
+.ui-block-b-button{
+	width:60% !important
+}
+
+.ui-block-c-button{
+	width:20% !important
+}
+
+.notification-list{
+	padding-right:15px;
+}
+
+.Imagefullwidth{
+	width:90%
+}
+
+.titolo-notifica{
+	 font-weight: bold;
+}
+
+.testo-notifica{
+	   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+}

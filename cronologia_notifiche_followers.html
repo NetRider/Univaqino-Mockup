@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+    	<title>Ratchet template page</title>
+
+    	<!-- Sets initial viewport load and disables zooming  -->
+    	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    	<!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    	<!-- Include the compiled Ratchet CSS -->
+    	<link href="libs/ratchet-v2.0.2/css/ratchet.css" rel="stylesheet">
+
+
+		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.structure.min.css" rel="stylesheet">
+		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.theme.min.css" rel="stylesheet">
+
+		<link href="css/accordion.css" rel="stylesheet">
+		
+    	<!-- Include the compiled Ratchet JS -->
+    	<script src="libs/ratchet-v2.0.2/js/ratchet.js"></script>
+		<script src="libs/jquery-1.12.0.min.js"></script>
+		<script>
+	    	$(document).bind('mobileinit',function(){
+	        $.mobile.changePage.defaults.changeHash = false;
+	        $.mobile.hashListeningEnabled = false;
+	        $.mobile.pushStateEnabled = false;
+	    	});
+		</script>
+		<script src="libs/jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
+<link href="css/gestione_notifiche.css" rel="stylesheet">
+
+  	</head>
+  	<body>
+		<!-- Title bar -->
+		<header class="bar bar-nav">
+  			<h1 class="title">Menu</h1>
+		</header>
+		
+			<div class="content spazio-nav">
+			<div class="card">
+	  			<ul id="slippylist" class="table-view">
+	    			<li class="table-view-cell table-view-divider">Amici</li>
+
+
+	  				<li class="table-view-cell notification-list" data-role="listview">
+	    				
+	    				 <div data-role="main" class="ui-content">
+  
+   						 <div class="ui-grid-b">
+   			 					   <div class="ui-block-a ui-block-a-button"><span>
+  									    <img class="media-object pull-left cardImage Imagefullwidth" src="img/matteo.jpg">
+      								</span></div>
+   								   <div class="ui-block-b ui-block-b-button">	
+    									  <span class="titolo-notifica">Matteo Polsinelli </span> <br>
+    									  
+						    			    <span class="testo-notifica">ha inviato una richiesta per seguirti </span>
+    							  </div>
+   								   <div class="ui-block-c ui-block-c-button">
+   								   		<span class="center btncontainer">
+										<button class="btn">Accetta</button>
+										<button class="btn">Rifiuta</button>
+										</span>
+			      				  </div>
+  					     </div>
+ 						 </div>
+				    </li>
+
+			  		<li class="table-view-cell notification-list ui-listview">
+			    	 <div data-role="main" class="ui-content">
+  
+   						 <div class="ui-grid-b">
+   			 					   <div class="ui-block-a"><span>
+  									    <img class="media-object pull-left cardImage Imagefullwidth" src="img/davide.jpg">
+      								</span></div>
+   								   <div class="ui-block-b">	
+    										<span class="titolo-notifica">Davide Giancola</span> <br>
+						    			    <span class="testo-notifica">E' Appena entrato in Aula 1.6 di Coppito 1 </span>
+								   </div>
+   								   <div class="ui-block-c">
+   								   		
+			      				  </div>
+  					     </div>
+ 						 </div>
+			  		</li>
+			  		
+			  		<li class="table-view-cell notification-list ui-listview">
+			    	 <div data-role="main" class="ui-content">
+  
+   						 <div class="ui-grid-b">
+   			 					   <div class="ui-block-a"><span>
+  									    <img class="media-object pull-left cardImage Imagefullwidth" src="img/davide.jpg">
+      								</span></div>
+   								   <div class="ui-block-b">	
+    										<span class="titolo-notifica">Davide Giancola</span> <br>
+						    			    <span class="testo-notifica">E' Appena entrato in Aula 1.6 di Coppito 1 </span>
+								   </div>
+   								   <div class="ui-block-c">
+   								   		
+			      				  </div>
+  					     </div>
+ 						 </div>
+			  		</li>
+			  		
+			  		<li class="table-view-cell notification-list ui-listview">
+			    	 <div data-role="main" class="ui-content">
+  
+   						 <div class="ui-grid-b">
+   			 					   <div class="ui-block-a"><span>
+  									    <img class="media-object pull-left cardImage Imagefullwidth" src="img/davide.jpg">
+      								</span></div>
+   								   <div class="ui-block-b">	
+    										<span class="titolo-notifica">Davide Giancola</span> <br>
+						    			    <span class="testo-notifica">E' Appena entrato in Aula 1.6 di Coppito 1 </span>
+								   </div>
+   								   <div class="ui-block-c">
+   								   		
+			      				  </div>
+  					     </div>
+ 						 </div>
+			  		</li>
+			  		
+			  		<li class="table-view-cell notification-list ui-listview">
+			    	 <div data-role="main" class="ui-content">
+  
+   						 <div class="ui-grid-b">
+   			 					   <div class="ui-block-a"><span>
+  									    <img class="media-object pull-left cardImage Imagefullwidth" src="img/davide.jpg">
+      								</span></div>
+   								   <div class="ui-block-b">	
+    										<span class="titolo-notifica">Davide Giancola</span> <br>
+						    			    <span class="testo-notifica">E' Appena entrato in Aula 1.6 di Coppito 1 </span>
+								   </div>
+   								   <div class="ui-block-c">
+   								   		
+			      				  </div>
+  					     </div>
+ 						 </div>
+			  		</li>
+			  		
+			  		<li class="table-view-cell notification-list ui-listview">
+			    	 <div data-role="main" class="ui-content">
+  
+   						 <div class="ui-grid-b">
+   			 					   <div class="ui-block-a"><span>
+  									    <img class="media-object pull-left cardImage Imagefullwidth" src="img/davide.jpg">
+      								</span></div>
+   								   <div class="ui-block-b">	
+    										<span class="titolo-notifica">Davide Giancola</span> <br>
+						    			    <span class="testo-notifica">E' Appena entrato in Aula 1.6 di Coppito 1 </span>
+								   </div>
+   								   <div class="ui-block-c">
+   								   		
+			      				  </div>
+  					     </div>
+ 						 </div>
+			  		</li>
+	  			</ul>
+			</div>
+		</div>
+		
+
+		<nav class="bar bar-tab">
+  			<a class="tab-item active" href="#">
+    			<span class="icon icon-home"></span>
+    			<span class="tab-label">Home</span>
+  			</a>
+			<a class="tab-item" href="#">
+				<span class="icon icon-person"></span>
+			    <span class="tab-label">Profilo</span>
+			</a>
+			<a class="tab-item" href="#">
+				<span class="icon icon-search"></span>
+			    <span class="tab-label">Cerca</span>
+			</a>
+			<a class="tab-item" href="#">
+				<span class="media-object">
+					<img src="img/followers.png" class="followersImage">
+				</span>
+			    <span class="tab-label">Followers</span>
+			</a>
+			<a class="tab-item" href="#">
+				<span class="icon icon-bars"></span>
+			    <span class="tab-label">Menu</span>
+			</a>
+		</nav>
+		<script src="libs/SlipJs/slip.js"></script>
+<script src="js/gestione_notifiche.js"></script>
+  	</body>
+</html>
