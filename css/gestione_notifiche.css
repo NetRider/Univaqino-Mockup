@@ -36,6 +36,16 @@
 	 font-weight: bold;
 }
 
+.btn_cancella{
+	 background-color: #d9534f !important;
+    border: 1px solid #d9534f !important;
+    color: #fff !important;
+	top: 38% !important;
+	width:30% !important;
+	height:80%;
+	
+}
+
 .testo-notifica{
 	   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 1em;
