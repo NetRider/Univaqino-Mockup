@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+    	<title>Ratchet template page</title>
+
+    	<!-- Sets initial viewport load and disables zooming  -->
+    	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    	<!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    	<!-- Include the compiled Ratchet CSS -->
+    	<link href="libs/ratchet-v2.0.2/css/ratchet.css" rel="stylesheet">
+
+		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.structure.min.css" rel="stylesheet">
+		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.theme.min.css" rel="stylesheet">
+		<link href="css/accordion.css" rel="stylesheet">
+		<link href="libs/SnapJs/snap.css" rel="stylesheet">
+		<link href="css/followers.css" rel="stylesheet">
+
+
+    	<!-- Include the compiled Ratchet JS -->
+    	<script src="libs/ratchet-v2.0.2/js/ratchet.js"></script>
+		<script src="libs/jquery-1.12.0.min.js"></script>
+		<script src="libs/SnapJs/snap.min.js"></script>
+
+		<script>
+	    	$(document).bind('mobileinit',function(){
+	        $.mobile.changePage.defaults.changeHash = false;
+	        $.mobile.hashListeningEnabled = false;
+	        $.mobile.pushStateEnabled = false;
+	    	});
+		</script>
+		<script src="libs/jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
+		<script src="js/filtroCorsi.js"></script>
+
+  	</head>
+  	<body>
+
+		<!-- Title bar -->
+		<header class="bar bar-nav">
+  			<a class="icon icon-left-nav pull-left" href="profile.html"></a>
+  			<h1 class="title">Corsi Seguiti</h1>
+		</header>
+		<div class="snap-drawers">
+			<div id="contentoffcanvas" class="snap-drawer snap-drawer-right">
+			</div>
+		</div>
+
+
+		<div id="contentmain" class="content snap-content">
+			<div class="filter">
+				<div class="segmented-control">
+				    <a id="anno1" class="control-item active">1° anno</a>
+				    <a id="anno2" class="control-item">2° anno</a>
+				    <a id="anno3" class="control-item">3° anno</a>
+				    <a id="ascelta" class="control-item">A scelta</a>
+		  		</div>
+			</div>
+
+			<div id="anno">
+			</div>
+
+		</div>
+			
+		<!-- Tab Bar -->
+		<nav class="bar bar-tab">
+  			<a class="tab-item" href="#">
+    			<span class="icon icon-home"></span>
+    			<span class="tab-label">Home</span>
+  			</a>
+			<a class="tab-item" href="#">
+				<span class="icon icon-person"></span>
+			    <span class="tab-label">Profilo</span>
+			</a>
+			<a class="tab-item" href="#">
+				<span class="icon icon-search"></span>
+			    <span class="tab-label">Cerca</span>
+			</a>
+			<a class="tab-item active" href="#">
+				<span class="media-object">
+					<img src="img/followers.png" class="followersImage">
+				</span>
+			    <span class="tab-label">Followers</span>
+			</a>
+			<a class="tab-item" href="#">
+				<span class="icon icon-bars"></span>
+			    <span class="tab-label">Menu</span>
+			</a>
+		</nav>
+  	</body>
+</html>
