@@ -115,6 +115,7 @@ function movetoPolo(){
 
 function impostaAule()
 {
+	hideFollowers();
 	$("#P0Coppito1").load("./AuleCoppito1.html #P0");
 	$("#P1Coppito1").load("./AuleCoppito1.html #P1");
 	$("#P2Coppito1").load("./AuleCoppito1.html #P2");
@@ -129,6 +130,7 @@ function impostaAule()
 
 function impostaFollowers()
 {
+	showFollowers();
 	$("#P0Coppito1").load("./FollowersCoppito1.html #P0");
 	$("#P1Coppito1").load("./FollowersCoppito1.html #P1");
 	$("#P2Coppito1").load("./FollowersCoppito1.html #P2");
@@ -138,6 +140,7 @@ function impostaFollowers()
 
 function impostaProfessori()
 {
+	showFollowers();
 	$("#P0Coppito1").load("./ProfessoriCoppito1.html #P0");
 	$("#P1Coppito1").load("./ProfessoriCoppito1.html #P1");
 	$("#P2Coppito1").load("./ProfessoriCoppito1.html #P2");
@@ -147,9 +150,27 @@ function impostaProfessori()
 
 function impostaUffici()
 {
+	hideFollowers();
 	$("#P0Coppito1").load("./UfficiCoppito1.html #P0");
 	$("#P1Coppito1").load("./UfficiCoppito1.html #P1");
 	$("#P2Coppito1").load("./UfficiCoppito1.html #P2");
 	$(".active").removeClass("active");
 	$("#ufficibar").addClass("active");
+}
+
+function hideFollowers()
+{
+	$("#infoFollowersNavigation").hide();
+	$("#poloCoppito0Followers").hide();
+	$("#poloCoppito1Followers").hide();
+	$("#poloCoppito2Followers").hide();
+	$("#poloCoppito1Piano0Followers").hide();
+}
+
+function showFollowers() {
+	$("#infoFollowersNavigation").show();
+	$("#poloCoppito0Followers").show();
+	$("#poloCoppito1Followers").show();
+	$("#poloCoppito2Followers").show();
+	$("#poloCoppito1Piano0Followers").show();
 }
