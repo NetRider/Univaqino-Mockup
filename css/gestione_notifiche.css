@@ -1,6 +1,12 @@
-.btn{
-	width:90% !important;
-	height:20%
+.btn_accetta{
+	margin-right:5px;
+	min-width:90%;
+	font-size: 10px;
+}
+
+.btn_rifiuta{
+	margin-top:10px;
+	min-width:90%;
 }
 
 .ui-block-a{
@@ -17,15 +23,15 @@
 }
 
 .ui-block-b-button{
-	width:60% !important
+	width:58% !important
 }
 
 .ui-block-c-button{
-	width:20% !important
+	width:22% !important
 }
 
 .notification-list{
-	padding-right:15px;
+	padding-right:5px;
 }
 
 .Imagefullwidth{
@@ -36,15 +42,7 @@
 	 font-weight: bold;
 }
 
-.btn_cancella{
-	 background-color: #d9534f !important;
-    border: 1px solid #d9534f !important;
-    color: #fff !important;
-	top: 38% !important;
-	width:30% !important;
-	height:80%;
-	
-}
+
 
 .testo-notifica{
 	   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
