@@ -21,9 +21,16 @@
 .media-body{
 	font-weight:bold;
 }
+
+.card .table-view {
+    margin-bottom: 0px;
+}
+
 .button{
-	min-width:60%;
-	text-align:left;
+	 font-size: 0.7em;
+    height: 25px;
+    min-width: 50%;
+    text-align: left;
 }
 
 .content{
