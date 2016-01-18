@@ -2,6 +2,11 @@ $(function() {
 
 	$("#freccia_indietro").css("visibility","hidden");
 
+	$("#coppito1").on("click",function(){
+	
+	//	movetoPolo();
+	});
+	
 	$("#aulebar").on("click",function(){
 		impostaAule();
 	});
@@ -42,6 +47,11 @@ $(function() {
 var snapper = new Snap({
     element: document.getElementById('contentmain'),
 });
+
+function movetoPolo(){
+
+	$('body').scrollTo('#coppito1');
+}
 
 function impostaAule()
 {
