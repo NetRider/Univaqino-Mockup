@@ -19,6 +19,7 @@
 		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.theme.min.css" rel="stylesheet">
 
 		<link href="css/accordion.css" rel="stylesheet">
+		<link href="css/profile.css" rel="stylesheet">
     	<!-- Include the compiled Ratchet JS -->
     	<script src="libs/ratchet-v2.0.2/js/ratchet.js"></script>
 		<script src="libs/jquery-1.12.0.min.js"></script>
@@ -35,45 +36,90 @@
   	<body>
 		<!-- Title bar -->
 		<header class="bar bar-nav">
-  			<h1 class="title">Menu</h1>
+  			<h2 class="title">Gestione Privacy</h2>
 		</header>
 
 		<div class="content">
+			<div class="card">
+				<ul class="table-view">
+					<li class="table-view-cell table-view-divider">
+					    Status
+					</li>
 
-			<a href="lista_poli_per_gestione.html">
-				<button class="btn btn-primary btn-block prova">
-					<span class="icon icon-gear"></span>
-					Gestione Poli
-				</button>
-			</a>
+					<li class="table-view-cell">
+					    Lezione
+					    <div class="toggle">
+					    	<div class="toggle-handle"></div>
+					    </div>
+					</li>
 
-			<a href="gestione_notifiche.html">
-				<button class="btn btn-positive btn-block">
-					<span class="icon icon-list"></span>
-					Cronologia Notifiche
-				</button>
-			</a>
+					<li class="table-view-cell">
+					    Pausa
+					    <div class="toggle active">
+					      	<div class="toggle-handle"></div>
+					    </div>
+					</li>
 
+					<li class="table-view-cell">
+					    Pranzo
+					    <div class="toggle">
+					    	<div class="toggle-handle"></div>
+					    </div>
+					</li>
 
-			<a href="selezionaProfAvvistamento.html">
-				<button class="btn btn-negative btn-block">
-					<span class="icon icon-search"></span>
-					Avvista Prof
-				</button>
-			</a>
+					<li class="table-view-cell">
+					    Non disturbare
+					    <div class="toggle">
+					    	<div class="toggle-handle"></div>
+					    </div>
+					</li>
 
-			<button class="btn btn-negative btn-block">
-				<span class="icon icon-search"></span>
-				Log Out
-			</button>
+					<li class="table-view-cell">
+					    Annoiato/SuiLibri
+					    <div class="toggle">
+					    	<div class="toggle-handle"></div>
+					    </div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="card">
+				<ul class="table-view">
+					<li class="table-view-cell table-view-divider">
+					    Altre informazioni
+					</li>
+
+					<li class="table-view-cell">
+					    Posizione
+					    <div class="toggle">
+					    	<div class="toggle-handle"></div>
+					    </div>
+					</li>
+
+					<li class="table-view-cell">
+						Polo di appartenenza
+						<div class="toggle">
+							<div class="toggle-handle"></div>
+						</div>
+					</li>
+
+					<li class="table-view-cell">
+						Corsi seguiti
+						<div class="toggle">
+							<div class="toggle-handle"></div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
 		</div>
 
 		<nav class="bar bar-tab">
-  			<a class="tab-item" href="navigation.html">
+  			<a class="tab-item active" href="#">
     			<span class="icon icon-home"></span>
     			<span class="tab-label">Home</span>
   			</a>
-			<a class="tab-item" href="profile.html">
+			<a class="tab-item" href="#">
 				<span class="icon icon-person"></span>
 			    <span class="tab-label">Profilo</span>
 			</a>
@@ -87,7 +133,7 @@
 				</span>
 			    <span class="tab-label">Followers</span>
 			</a>
-			<a class="tab-item active" href="#">
+			<a class="tab-item" href="#">
 				<span class="icon icon-bars"></span>
 			    <span class="tab-label">Menu</span>
 			</a>
