@@ -1,11 +1,39 @@
 $(function() {
 
+	$.fn.scrollTo = function( target, options, callback ){
+		  if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
+		  var settings = $.extend({
+		    scrollTarget  : target,
+		    offsetTop     : 90,
+		    duration      : 500,
+		    easing        : 'swing'
+		  }, options);
+		  return this.each(function(){
+		    var scrollPane = $(this);
+		    var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
+		    var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
+		    scrollPane.animate({scrollTop : scrollY }, parseInt(settings.duration), settings.easing, function(){
+		      if (typeof callback == 'function') { callback.call(this); }
+		    });
+		  });
+		}
+
+	
 	
 	$("#freccia_indietro").css("display","none");
 
-	$("#coppito1").on("click",function(){
-
-	//	movetoPolo();
+	
+	
+	$("#P0_C1").on("click",function(){
+		
+		$('#contentmain').scrollTo('#P0_C1');
+	
+	});
+	
+$("#P1_C1").on("click",function(){
+		
+		$('#contentmain').scrollTo('#P1_C1');
+	
 	});
 
 	$("#aulebar").on("click",function(){
