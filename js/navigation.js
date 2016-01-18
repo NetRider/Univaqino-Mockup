@@ -1,5 +1,6 @@
 $(function() {
 
+	
 	$("#freccia_indietro").css("display","none");
 
 	$("#coppito1").on("click",function(){

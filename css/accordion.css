@@ -1,9 +1,16 @@
+.tab-item{
+	color: #929292 !important;
+}
+
+.tab-item-selected{
+	 color: #3388cc !important;
+}
 
 
 #titleNavigation{
 	text-align:center;
-	font-size:17px;
-margin-top: 14px;
+	font-size:20px;
+margin-top: 12px;
 }
 
 
@@ -129,6 +136,7 @@ font-size: 0.7em;
 }
 
 .followersImage {
+	margin-bottom: -11px;
 	width: 30px;
 	height: 30px;
 }
