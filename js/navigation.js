@@ -3,16 +3,20 @@ $(function() {
 	$("#freccia_indietro").css("visibility","hidden");
 
 	$("#coppito1").on("click",function(){
-	
+
 	//	movetoPolo();
 	});
-	
+
 	$("#aulebar").on("click",function(){
 		impostaAule();
 	});
 
 	$("#followerbar").on("click",function(){
 		impostaFollowers();
+	});
+
+	$("#profbar").on("click",function(){
+		impostaProfessori();
 	});
 
 	$("#P0Coppito1").on("click",".frecciaAula",function(){
@@ -31,6 +35,19 @@ $(function() {
 	$("#P0Coppito1").on("click",".frecciaProfilo",function(){
 		$("#freccia_indietro").css("visibility","visible");
 		$("#contentoffcanvas").load("./profile_visitato_from_navigation.html");
+		$("#titleNavigation").text("Profilo");
+        snapper.expand("right");
+				$("#freccia_indietro").on("click",function(){
+					$("#contentoffcanvas").innerHTML="";
+					snapper.close();
+					$("#freccia_indietro").css("visibility","hidden");
+					$("#titleNavigation").text("Navigation");
+				});
+	});
+
+	$("#P0Coppito1").on("click",".frecciaProf",function(){
+		$("#freccia_indietro").css("visibility","visible");
+		$("#contentoffcanvas").load("./profile_prof_visitato.html");
 		$("#titleNavigation").text("Profilo");
         snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
@@ -82,5 +99,5 @@ function impostaProfessori()
 	$("#P1Coppito1").load("./ProfessoriCoppito1.html #P1");
 	$("#P2Coppito1").load("./ProfessoriCoppito1.html #P2");
 	$(".active").removeClass("active");
-	$("#followerbar").addClass("active");
+	$("#profbar").addClass("active");
 }
