@@ -1,6 +1,6 @@
 $(function() {
 
-	$("#freccia_indietro").css("visibility","hidden");
+	$("#freccia_indietro").css("display","none");
 
 	$("#coppito1").on("click",function(){
 
@@ -24,80 +24,94 @@ $(function() {
 	});
 
 	$("#P0Coppito1").on("click",".frecciaAula",function(){
-		$("#freccia_indietro").css("visibility","visible");
+		$("#freccia_indietro").css("display","block");
 		$("#contentoffcanvas").load("./schedaAula.html");
 		$("#titleNavigation").text("Aula");
+		$(".bar-header-secondary").css("display","none");
+		//$("#contentmain").removeClass("hassubnav");
         snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
 							$("#contentoffcanvas").innerHTML="";
 							snapper.close();
-							$("#freccia_indietro").css("visibility","hidden");
+							$("#freccia_indietro").css("display","none");
 							$("#titleNavigation").text("Università dell'Aquila");
+							$(".bar-header-secondary").css("display","block");
+							//$("#contentmain").addClass("hassubnav");
 						});
 	});
 
 	$("#P0Coppito1").on("click",".frecciaProfilo",function(){
-		$("#freccia_indietro").css("visibility","visible");
+		$("#freccia_indietro").css("display","block");
 		$("#contentoffcanvas").load("./profile_visitato_from_navigation.html");
 		$("#titleNavigation").text("Profilo");
+		$(".bar-header-secondary").css("display","none");
         snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
-					$("#freccia_indietro").css("visibility","hidden");
+					$("#freccia_indietro").css("display","none");
 					$("#titleNavigation").text("Università dell'Aquila");
+					$(".bar-header-secondary").css("display","block");
 				});
 	});
 
 	$("#P0Coppito1").on("click",".frecciaProf",function(){
-		$("#freccia_indietro").css("visibility","visible");
+		$("#freccia_indietro").css("display","block");
 		$("#contentoffcanvas").load("./profile_prof_visitato.html");
 		$("#titleNavigation").text("Profilo");
+		$(".bar-header-secondary").css("display","none");
         snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
-					$("#freccia_indietro").css("visibility","hidden");
+					$("#freccia_indietro").css("display","none");
 					$("#titleNavigation").text("Università dell'Aquila");
+					$(".bar-header-secondary").css("display","block");
 				});
 	});
 
 	$("#P0Coppito1").on("click",".frecciaUfficioProf",function(){
-		$("#freccia_indietro").css("visibility","visible");
+		$("#freccia_indietro").css("display","block");
 		$("#contentoffcanvas").load("./schedaUfficioProf.html");
 		$("#titleNavigation").text("Ufficio 301");
+		$(".bar-header-secondary").css("display","none");
 		snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
-					$("#freccia_indietro").css("visibility","hidden");
+					$("#freccia_indietro").css("display","none");
 					$("#titleNavigation").text("Università dell'Aquila");
+					$(".bar-header-secondary").css("display","block");
 				});
 	});
 
 	$("#P0Coppito1").on("click",".frecciaUfficioAmministrativo",function(){
-		$("#freccia_indietro").css("visibility","visible");
+		$("#freccia_indietro").css("display","block");
 		$("#contentoffcanvas").load("./schedaUfficioAmministrativo.html");
 		$("#titleNavigation").text("Segreteria Studenti");
+		$(".bar-header-secondary").css("display","none");
 		snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
-					$("#freccia_indietro").css("visibility","hidden");
+					$("#freccia_indietro").css("display","none");
 					$("#titleNavigation").text("Università dell'Aquila");
+					$(".bar-header-secondary").css("display","block");
 				});
 	});
 
 	$("#P0Coppito1").on("click",".frecciaLaboratorio",function(){
-		$("#freccia_indietro").css("visibility","visible");
+		$("#freccia_indietro").css("display","block");
 		$("#contentoffcanvas").load("./schedaLaboratorio.html");
 		$("#titleNavigation").text("Laboratorio");
+		$(".bar-header-secondary").css("display","none");
 		snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
-					$("#freccia_indietro").css("visibility","hidden");
+					$("#freccia_indietro").css("display","none");
 					$("#titleNavigation").text("Università dell'Aquila");
+					$(".bar-header-secondary").css("display","block");
 				});
 	});
 

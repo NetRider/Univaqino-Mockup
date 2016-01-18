@@ -1,3 +1,13 @@
+
+
+#titleNavigation{
+	text-align:center;
+	font-size:17px;
+margin-top: 14px;
+}
+
+
+
 /* Notifica urgente */
 #notification-red-polo>h3>a, #notification-red-edificio>h3>a, #notification-red-piano>h3>a {
 	background-color:red;
@@ -21,9 +31,7 @@ font-size: 0.7em;
 	color: black;
 }
 
-.filter{
-	margin: 15px;
-}
+
 
 .statusAula{
 	margin-left:30%;
@@ -99,6 +107,9 @@ font-size: 0.7em;
 	height: 200px;
 }
 
+.snap-drawers{
+	margin-top: 25px;
+}
 .selectStatusText {
 	text-align: center;
 }
@@ -111,7 +122,7 @@ font-size: 0.7em;
 }
 
 .menuCalendar {
-	margin-top: 15%;
+	margin-top: 53px;
 	margin-bottom: 10px;
 	margin-left: 10px;
 	margin-right: 10px;

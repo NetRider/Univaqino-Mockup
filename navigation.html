@@ -45,22 +45,25 @@
 			<a id="freccia_indietro" class="icon icon-left-nav pull-left"></a>
   			<h2 id= "titleNavigation" class="titleNavigation">Università dell'Aquila</h2>
 		</header>
-		<div class="snap-drawers">
-			<div id="contentoffcanvas" class="snap-drawer snap-drawer-right">
-			</div>
-		</div>
-		<div id="contentmain" class="content snap-content">
-
-			<!-- Accordion -->
-			<div class="filter">
-				<div class="segmented-control">
+		
+		<div class="filter bar bar-standard bar-header-secondary"">
+				<div class="segmented-control ">
 				    <a id="aulebar" class="control-item active">Aule</a>
 				    <a id="followerbar" class="control-item">Follower</a>
 				    <a id="profbar" class="control-item">Professori</a>
 					<a id="ufficiobar" class="control-item">Uffici</a>
 		  		</div>
 			</div>
-			<div data-role="collapsible-set" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+		
+		<div class="snap-drawers">
+			<div id="contentoffcanvas" class="snap-drawer snap-drawer-right">
+			</div>
+		</div>
+		<div id="contentmain" class="content snap-content hassubnav">
+
+			<!-- Accordion -->
+			
+			<div id="accordionmenu" data-role="collapsible-set" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
 
 				<div data-role="collapsible">
 
@@ -132,11 +135,11 @@
 				<span class="icon icon-person"></span>
 			    <span class="tab-label">Profilo</span>
 			</a>
-			<a class="tab-item" href="#">
+			<a class="tab-item" href="ricerca.html">
 				<span class="icon icon-search"></span>
 			    <span class="tab-label">Cerca</span>
 			</a>
-			<a class="tab-item" href="#">
+			<a class="tab-item" href="listaFollowers.html">
 				<span class="media-object">
 					<img src="img/followers.png" class="followersImage">
 				</span>

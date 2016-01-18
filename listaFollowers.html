@@ -18,7 +18,7 @@
 		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.theme.min.css" rel="stylesheet">
 		<link href="css/accordion.css" rel="stylesheet">
 		<link href="libs/SnapJs/snap.css" rel="stylesheet">
-		<link href="css/followers.css" rel="stylesheet">
+		
 
 
     	<!-- Include the compiled Ratchet JS -->
@@ -34,14 +34,12 @@
 	    	});
 		</script>
 		<script src="libs/jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
-		<script src="js/filtrofollower.js"></script>
-
   	</head>
   	<body>
 
 		<!-- Title bar -->
 		<header class="bar bar-nav">
-			<a id="freccia_indietro" class="icon icon-left-nav pull-left"></a>
+			<a id="freccia_indietro" href="navigation.html" data-transition="slide" data-direction="reverse" class="icon icon-left-nav pull-left"></a>
   			<h1 id= "titleNavigation" class="titleNavigation">Followers</h1>
 		</header>
 		<div class="snap-drawers">
@@ -87,5 +85,9 @@
 			    <span class="tab-label">Menu</span>
 			</a>
 		</nav>
+		
+		
+		<script src="js/filtrofollower.js"></script>
+<link href="css/followers.css" rel="stylesheet">
   	</body>
 </html>
