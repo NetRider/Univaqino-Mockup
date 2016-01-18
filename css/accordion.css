@@ -131,3 +131,8 @@ font-size: 0.7em;
 	/*background-color: green;*/
 	margin-left: 60%;
 }
+
+.avvistaProfButton, .avvistaProfButton:active  {
+	background-color: orange;
+	border: 1px solid orange;
+}
