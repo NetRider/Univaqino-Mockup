@@ -43,6 +43,8 @@ list.addEventListener('slip:swipe', function(e) {
    
 });
 
+
+
 list.addEventListener('slip:beforereorder', function(e) {
 	
          e.preventDefault();
