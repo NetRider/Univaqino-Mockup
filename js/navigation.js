@@ -19,6 +19,10 @@ $(function() {
 		impostaProfessori();
 	});
 
+	$("#ufficiobar").on("click",function(){
+		impostaUffici();
+	});
+
 	$("#P0Coppito1").on("click",".frecciaAula",function(){
 		$("#freccia_indietro").css("visibility","visible");
 		$("#contentoffcanvas").load("./schedaAula.html");
@@ -28,7 +32,7 @@ $(function() {
 							$("#contentoffcanvas").innerHTML="";
 							snapper.close();
 							$("#freccia_indietro").css("visibility","hidden");
-							$("#titleNavigation").text("Navigation");
+							$("#titleNavigation").text("Università dell'Aquila");
 						});
 	});
 
@@ -41,7 +45,7 @@ $(function() {
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
 					$("#freccia_indietro").css("visibility","hidden");
-					$("#titleNavigation").text("Navigation");
+					$("#titleNavigation").text("Università dell'Aquila");
 				});
 	});
 
@@ -54,7 +58,46 @@ $(function() {
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
 					$("#freccia_indietro").css("visibility","hidden");
-					$("#titleNavigation").text("Navigation");
+					$("#titleNavigation").text("Università dell'Aquila");
+				});
+	});
+
+	$("#P0Coppito1").on("click",".frecciaUfficioProf",function(){
+		$("#freccia_indietro").css("visibility","visible");
+		$("#contentoffcanvas").load("./schedaUfficioProf.html");
+		$("#titleNavigation").text("Ufficio 301");
+		snapper.expand("right");
+				$("#freccia_indietro").on("click",function(){
+					$("#contentoffcanvas").innerHTML="";
+					snapper.close();
+					$("#freccia_indietro").css("visibility","hidden");
+					$("#titleNavigation").text("Università dell'Aquila");
+				});
+	});
+
+	$("#P0Coppito1").on("click",".frecciaUfficioAmministrativo",function(){
+		$("#freccia_indietro").css("visibility","visible");
+		$("#contentoffcanvas").load("./schedaUfficioAmministrativo.html");
+		$("#titleNavigation").text("Segreteria Studenti");
+		snapper.expand("right");
+				$("#freccia_indietro").on("click",function(){
+					$("#contentoffcanvas").innerHTML="";
+					snapper.close();
+					$("#freccia_indietro").css("visibility","hidden");
+					$("#titleNavigation").text("Università dell'Aquila");
+				});
+	});
+
+	$("#P0Coppito1").on("click",".frecciaLaboratorio",function(){
+		$("#freccia_indietro").css("visibility","visible");
+		$("#contentoffcanvas").load("./schedaLaboratorio.html");
+		$("#titleNavigation").text("Laboratorio");
+		snapper.expand("right");
+				$("#freccia_indietro").on("click",function(){
+					$("#contentoffcanvas").innerHTML="";
+					snapper.close();
+					$("#freccia_indietro").css("visibility","hidden");
+					$("#titleNavigation").text("Università dell'Aquila");
 				});
 	});
 
@@ -100,4 +143,13 @@ function impostaProfessori()
 	$("#P2Coppito1").load("./ProfessoriCoppito1.html #P2");
 	$(".active").removeClass("active");
 	$("#profbar").addClass("active");
+}
+
+function impostaUffici()
+{
+	$("#P0Coppito1").load("./UfficiCoppito1.html #P0");
+	$("#P1Coppito1").load("./UfficiCoppito1.html #P1");
+	$("#P2Coppito1").load("./UfficiCoppito1.html #P2");
+	$(".active").removeClass("active");
+	$("#ufficibar").addClass("active");
 }
