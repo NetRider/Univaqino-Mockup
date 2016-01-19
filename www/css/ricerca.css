@@ -5,9 +5,9 @@
 }
 .table-view-divider{
 	padding-right:15px;
-	
-	padding-bottom:0px;
+	padding-bottom: 0px;
 }
+
 
 #risultati_ricerca{
 	display:none;
@@ -66,4 +66,9 @@
 	font-size:1em;
 	margin-bottom: 8px!important;
 	width:80% !important;
+}
+
+.cerca{
+	margin-top: -1px;
+	padding-bottom: 6px;
 }

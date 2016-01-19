@@ -40,66 +40,23 @@
 		<!-- Title bar -->
 		<header class="bar bar-nav">
 			<a class="icon icon-left-nav pull-left" href="selezionaProfAvvistamento.html"></a>
-  			<h2 id="titleNavigation">Seleziona Posizione</h2>
+  			<h2 id="titleNavigation">Cambia Status</h2>
 		</header>
 
 		<div class="content" data-page="index">
-			<div class="card">
+				<form>
+	  				<textarea rows="3" placeholder="scrivi il tuo status"></textarea>
+	  				<button class="btn btn-positive btn-block">Cambia</button>
+				</form>
+
 				<ul class="table-view">
-				 	<li class="table-view-cell">
-						Usa la mia posizione
-						<div class="toggle active" id="togglePosition">
-	 						<div class="toggle-handle"></div>
-   						</div>
-				  	</li>
-			  	</ul>
-			</div>
-			<div class="card">
-			<form class="input-group" id="formGps">
-		  		<div class="input-row">
-			    	<label>Polo</label>
-			    	<input type="text" placeholder="Coppito">
-		  		</div>
-		  		<div class="input-row">
-				    <label>Edificio</label>
-				    <input type="email" placeholder="Blocco 1">
-		  		</div>
-				<div class="input-row">
-					<label>Piano</label>
-				    <input type="text" placeholder="Terzo">
-				</div>
-				<div class="input-row">
-					<label>Luogo</label>
-				    <input type="text" placeholder="Sconosciuto">
-				</div>
-				<button class="btn btn-positive btn-block">Segnala</button>
-			  </form>
-			  <form class="input-group" id="formNormal" hidden>
-				  <ul class="table-view">
-				    <li class="table-view-cell">
-				      <a class="navigate-right">
-				        Polo: Coppito
-				      </a>
-				    </li>
-				    <li class="table-view-cell">
-				      <a class="navigate-right">
-				        Edificio: sconosciuto
-				      </a>
-				    </li>
-				    <li class="table-view-cell">
-				      <a class="navigate-right">
-				        Piano: sconosciuto
-				      </a>
-				    </li>
-					<li class="table-view-cell">
-				      <a class="navigate-right">
-				        Luogo: sconosciuto
-				      </a>
-				    </li>
-				  </ul>
-  				<button class="btn btn-positive btn-block">Segnala</button>
-  			  </form>
-			</div>
+					<li class="table-view-cell">a lezione</li>
+					<li class="table-view-cell">in pausa</li>
+					<li class="table-view-cell">a pranzo</li>
+					<li class="table-view-cell">non disturbare</li>
+					<li class="table-view-cell">annoiato/a sui libri</li>
+					<li class="table-view-cell">sconosciuto</li>
+				</ul>
 		</div>
 		<!-- Tab Bar -->
 		<nav class="bar bar-tab">
