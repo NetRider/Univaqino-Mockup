@@ -1,7 +1,9 @@
 .bordo_verde>a{
 	border-color: #00802b !important;
 }
-
+.content {
+    bottom: 52px;
+}
 
 .ui-collapsible-heading{
 	margin: 1px;
