@@ -53,18 +53,25 @@ $("#P1_C1").on("click",function(){
 	});
 
 	$("#P0Coppito1").on("click",".frecciaAula",function(){
-		$("#freccia_indietro").css("display","block");
+		
+		
+		//$("#contentmain").removeClass("hassubnav");
+        snapper.expand("right");
+      $("#freccia_indietro").css("display","block");
 		$("#contentoffcanvas").load("./schedaAula.html");
 		$("#titleNavigation").text("Aula");
 		$(".bar-header-secondary").css("display","none");
-		//$("#contentmain").removeClass("hassubnav");
-        snapper.expand("right");
+       
+        
+        
 				$("#freccia_indietro").on("click",function(){
 							$("#contentoffcanvas").innerHTML="";
 							snapper.close();
 							$("#freccia_indietro").css("display","none");
+							
 							$("#titleNavigation").text("Università dell'Aquila");
 							$(".bar-header-secondary").css("display","block");
+					
 							//$("#contentmain").addClass("hassubnav");
 						});
 	});
@@ -145,10 +152,24 @@ $("#P1_C1").on("click",function(){
 	});
 
 	impostaAule();
+	
+	$("#menu_btn").on("click",function(){
+		$("#menucanvas").load("./menu.html");
+		menu.open("right");
+	});
+	
+		$("#menucanvas").on("click","#close_menu",function(){
+		menu.close();
+	});
+	
 });
 
 var snapper = new Snap({
     element: document.getElementById('contentmain'),
+});
+
+var menu = new Snap({
+    element: document.getElementById('menu'),
 });
 
 function movetoPolo(){
