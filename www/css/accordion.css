@@ -1,7 +1,22 @@
 .bordo_verde>a{
 	border-color: #00802b !important;
 }
+.menu-border>ul{
+	margin-top:0px !important;
+}
 
+.menu-color>li{
+	padding: 10px 65px 10px 15px !important;
+	
+}
+
+.menu-color{
+	background-color:#66FF99;
+}
+
+.menu-border{
+	border-left:2px solid
+}
 
 .ui-collapsible-heading{
 	margin: 1px;
@@ -123,9 +138,7 @@ font-size: 0.7em;
 	height: 200px;
 }
 
-.snap-drawers{
-	margin-top: 25px;
-}
+
 .selectStatusText {
 	text-align: center;
 }
@@ -157,7 +170,7 @@ font-size: 0.7em;
 .infoFollowersNavigation
 {
 	/*background-color: green;*/
-	margin-left: 60%;
+	margin-left: 50%;
 }
 
 .avvistaProfButton, .avvistaProfButton:active  {
