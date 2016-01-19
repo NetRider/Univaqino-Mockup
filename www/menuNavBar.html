@@ -35,30 +35,23 @@
   	<body>
 		<!-- Title bar -->
 		<header class="bar bar-nav">
-  			<h1  class="title">Menu</h1>
+			<a class="icon icon-left-nav pull-left" href="index.html"></a>
+  			<h1  class="title">Impostazioni</h1>
 		</header>
 
 		<div class="content">
+
+			<a href="profile.html">
+				<button class="btn btn-primary btn-block prova">
+					<span class="icon icon-gear"></span>
+					Gestione Profilo
+				</button>
+			</a>
 
 			<a href="lista_poli_per_gestione.html">
 				<button class="btn btn-primary btn-block prova">
 					<span class="icon icon-gear"></span>
 					Gestione Poli
-				</button>
-			</a>
-
-			<a href="gestione_notifiche.html">
-				<button class="btn btn-positive btn-block">
-					<span class="icon icon-list"></span>
-					Centro Notifiche
-				</button>
-			</a>
-
-
-			<a href="selezionaProfAvvistamento.html">
-				<button class="btn btn-negative btn-block avvistaProfButton">
-					<span class="icon icon-search"></span>
-					Avvista Prof
 				</button>
 			</a>
 
@@ -69,27 +62,27 @@
 		</div>
 
 		<nav class="bar bar-tab">
-  			<a class="tab-item" href="navigation.html">
+  			<a class="tab-item active tab-item-selected" href="#">
     			<span class="icon icon-home"></span>
-    			<span class="tab-label">Home</span>
   			</a>
 			<a class="tab-item" href="profile.html">
-				<span class="icon icon-person"></span>
-			    <span class="tab-label">Profilo</span>
+				<span class="icon icon-compose"></span>
 			</a>
-			<a class="tab-item" href="ricerca.html">
-				<span class="icon icon-search"></span>
-			    <span class="tab-label">Cerca</span>
+
+			<a class="tab-item" href="gestione_notifiche.html">
+				<span class="media-object">
+					<img src="img/notifiche.png" class="followersImage">
+				</span>
 			</a>
 			<a class="tab-item" href="listaFollowers.html">
 				<span class="media-object">
 					<img src="img/followers.png" class="followersImage">
 				</span>
-			    <span class="tab-label">Followers</span>
 			</a>
-			<a class="tab-item tab-item-selected" href="">
-				<span class="icon icon-bars"></span>
-			    <span class="tab-label">Menu</span>
+			<a class="tab-item" href="selezionaProfAvvistamento.html">
+				<span class="media-object">
+					<img src="img/profMirino.png" class="followersImage">
+				</span>
 			</a>
 		</nav>
   	</body>

@@ -16,14 +16,11 @@
 
 		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.structure.min.css" rel="stylesheet">
 		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.theme.min.css" rel="stylesheet">
-<link href="libs/jquery.mobile.custom/jquery.mobile-1.4.5.css" rel="stylesheet">
-
+		<link href="libs/jquery.mobile.custom/jquery.mobile-1.4.5.css" rel="stylesheet">
 
 		<link href="libs/SnapJs/snap.css" rel="stylesheet">
-		
+
 		<link href="css/profile.css" rel="stylesheet">
-
-
 
     	<!-- Include the compiled Ratchet JS -->
     	<script src="libs/ratchet-v2.0.2/js/ratchet.js"></script>
@@ -46,10 +43,13 @@
 		<!-- Title bar -->
 		<header class="bar bar-nav">
 			<a id="freccia_indietro" class="icon icon-left-nav pull-left"></a>
+			<a class="icon icon-gear pull-right" href="menuNavBar.html"></a>
+			<a class="icon icon-search pull-right" href="ricerca.html"></a>
+
   			<h2 id= "titleNavigation" class="titleNavigation">Università dell'Aquila</h2>
 		</header>
-		
-		<div class="filter bar bar-standard bar-header-secondary"">
+
+		<div class="filter bar bar-standard bar-header-secondary">
 				<div class="segmented-control ">
 				    <a id="aulebar" class="control-item active">Aule</a>
 				    <a id="followerbar" class="control-item">Follower</a>
@@ -57,7 +57,7 @@
 					<a id="ufficiobar" class="control-item">Uffici</a>
 		  		</div>
 			</div>
-		
+
 		<div class="snap-drawers">
 			<div id="contentoffcanvas" class="snap-drawer snap-drawer-right">
 			</div>
@@ -65,7 +65,7 @@
 		<div id="contentmain" class="content snap-content hassubnav">
 
 			<!-- Accordion -->
-			
+
 			<div id="accordionmenu" data-role="collapsible-set" data-collapsed-icon="carat-r" data-expanded-icon="carat-d">
 
 				<div  data-role="collapsible">
@@ -126,36 +126,33 @@
 			        <p>Collapsible content, swatch "d"</p>
 			    </div>
 			</div>
-			
-				<!-- Tab Bar -->
+		</div>
 		<nav class="bar bar-tab">
   			<a class="tab-item active tab-item-selected" href="#">
     			<span class="icon icon-home"></span>
-    			<span class="tab-label">Home</span>
   			</a>
 			<a class="tab-item" href="profile.html">
-				<span class="icon icon-person"></span>
-			    <span class="tab-label">Profilo</span>
+				<span class="icon icon-compose"></span>
 			</a>
-			<a class="tab-item" href="ricerca.html">
-				<span class="icon icon-search"></span>
-			    <span class="tab-label">Cerca</span>
+
+			<a class="tab-item" href="gestione_notifiche.html">
+				<span class="media-object">
+					<img src="img/notifiche.png" class="followersImage">
+				</span>
 			</a>
 			<a class="tab-item" href="listaFollowers.html">
 				<span class="media-object">
 					<img src="img/followers.png" class="followersImage">
 				</span>
-			    <span class="tab-label">Followers</span>
 			</a>
-			<a class="tab-item" href="menuNavBar.html">
-				<span class="icon icon-bars"></span>
-			    <span class="tab-label">Menu</span>
+			<a class="tab-item" href="selezionaProfAvvistamento.html">
+				<span class="media-object">
+					<img src="img/profMirino.png" class="followersImage">
+				</span>
 			</a>
 		</nav>
-			
-		</div>
 
-	
+
   	</body>
 	<script src="js/navigation.js"></script>
 </html>
