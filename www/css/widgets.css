@@ -1,0 +1,19 @@
+.ui-block-b{
+	width:50% !important;
+	float:right !important;
+}
+
+.ui-block-a{
+	float:right !important;
+	width:50% !important;
+}
+
+.widgetImage {
+	margin-left: 20%;
+	width: 100%;
+	height: auto;
+}
+
+.fullwidth{
+	width:100% !important;
+}
