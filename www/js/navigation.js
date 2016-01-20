@@ -93,7 +93,7 @@ $("#P1_C1").on("click",function(){
 
 	$("#P0Coppito1").on("click",".frecciaProf",function(){
 		$("#freccia_indietro").css("display","block");
-		$("#contentoffcanvas").load("./profile_prof_visitato.html");
+		$("#contentoffcanvas").load("./profile_prof_visitato_from_navigation.html");
 		$("#titleNavigation").text("Profilo");
 		$(".bar-header-secondary").css("display","none");
         snapper.expand("right");
@@ -179,7 +179,7 @@ var snapper = new Snap({
     minPosition: -266,
     tapToClose: true,
     touchToDrag: false,
-    slideIntent: 40,
+    slideIntent: 20,
     minDragDistance: 5
 });
 
@@ -197,8 +197,8 @@ var menu = new Snap({
     minPosition: -266,
     tapToClose: true,
     touchToDrag: true,
-    slideIntent: 40,
-    minDragDistance: 5
+    slideIntent: 20,
+    minDragDistance: 40
 });
 
 function movetoPolo(){
