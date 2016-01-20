@@ -128,6 +128,7 @@ $("#P1_C1").on("click",function(){
 		$(".bar-header-secondary").css("display","none");
 		snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
+					$("#menucanvas").load("./menu.html");
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
 					$("#freccia_indietro").css("display","none");
@@ -143,6 +144,7 @@ $("#P1_C1").on("click",function(){
 		$(".bar-header-secondary").css("display","none");
 		snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
+					$("#menucanvas").load("./menu.html");
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
 					$("#freccia_indietro").css("display","none");
@@ -152,10 +154,9 @@ $("#P1_C1").on("click",function(){
 	});
 
 	impostaAule();
-	
+	$("#menucanvas").load("./menu.html");
 	$("#menu_btn").on("click",function(){
-		$("#menucanvas").load("./menu.html");
-		menu.open("right");
+			menu.open("right");
 	});
 	
 		$("#menucanvas").on("click","#close_menu",function(){
@@ -166,10 +167,38 @@ $("#P1_C1").on("click",function(){
 
 var snapper = new Snap({
     element: document.getElementById('contentmain'),
+    dragger: null,
+    disable: 'left',
+    addBodyClasses: true,
+    hyperextensible: true,
+    resistance: 0.5,
+    flickThreshold: 50,
+    transitionSpeed: 0.3,
+    easing: 'ease',
+    maxPosition: 266,
+    minPosition: -266,
+    tapToClose: true,
+    touchToDrag: false,
+    slideIntent: 40,
+    minDragDistance: 5
 });
 
 var menu = new Snap({
     element: document.getElementById('menu'),
+    dragger: null,
+    disable: 'left',
+    addBodyClasses: true,
+    hyperextensible: true,
+    resistance: 0.5,
+    flickThreshold: 50,
+    transitionSpeed: 0.3,
+    easing: 'ease',
+    maxPosition: 266,
+    minPosition: -266,
+    tapToClose: true,
+    touchToDrag: true,
+    slideIntent: 40,
+    minDragDistance: 5
 });
 
 function movetoPolo(){
