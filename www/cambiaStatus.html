@@ -43,12 +43,23 @@
 		</header>
 
 		<div class="content" data-page="index">
-				<form>
-	  				<textarea rows="3" placeholder="scrivi il tuo status"></textarea>
-	  				<button class="btn btn-positive btn-block">Cambia</button>
-				</form>
-
+			<div class="card">
 				<ul class="table-view">
+					<li class="table-view-divider">Il tuo status attuale</li>
+					<li class="table-view-cell media">
+						<a class="navigate-right">
+							<span class="media-object pull-left icon icon-edit"></span>
+							<div class="media-body">
+		  					a lezione
+							</div>
+	  					</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="card">
+				<ul class="table-view">
+					<li class="table-view-divider">Seleziona uno status</li>
 					<li class="table-view-cell">a lezione</li>
 					<li class="table-view-cell">in pausa</li>
 					<li class="table-view-cell">a pranzo</li>
@@ -56,6 +67,7 @@
 					<li class="table-view-cell">annoiato/a sui libri</li>
 					<li class="table-view-cell">sconosciuto</li>
 				</ul>
+			</div>
 		</div>
 		<!-- Tab Bar -->
 

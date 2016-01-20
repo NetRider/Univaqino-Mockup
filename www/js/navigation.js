@@ -18,22 +18,22 @@ $(function() {
 		  });
 		}
 
-	
-	
+
+
 	$("#freccia_indietro").css("display","none");
 
-	
-	
+
+
 	$("#P0_C1").on("click",function(){
-		
+
 		$('#contentmain').scrollTo('#P0_C1');
-	
+
 	});
-	
+
 $("#P1_C1").on("click",function(){
-		
+
 		$('#contentmain').scrollTo('#P1_C1');
-	
+
 	});
 
 	$("#aulebar").on("click",function(){
@@ -53,25 +53,25 @@ $("#P1_C1").on("click",function(){
 	});
 
 	$("#P0Coppito1").on("click",".frecciaAula",function(){
-		
-		
+
+
 		//$("#contentmain").removeClass("hassubnav");
         snapper.expand("right");
       $("#freccia_indietro").css("display","block");
 		$("#contentoffcanvas").load("./schedaAula.html");
 		$("#titleNavigation").text("Aula");
 		$(".bar-header-secondary").css("display","none");
-       
-        
-        
+
+
+
 				$("#freccia_indietro").on("click",function(){
 							$("#contentoffcanvas").innerHTML="";
 							snapper.close();
 							$("#freccia_indietro").css("display","none");
-							
+
 							$("#titleNavigation").text("Università dell'Aquila");
 							$(".bar-header-secondary").css("display","block");
-					
+
 							//$("#contentmain").addClass("hassubnav");
 						});
 	});
@@ -156,13 +156,13 @@ $("#P1_C1").on("click",function(){
 	impostaAule();
 	$("#menucanvas").load("./menu.html");
 	$("#menu_btn").on("click",function(){
-			menu.open("right");
+			menu.open("left");
 	});
-	
+
 		$("#menucanvas").on("click","#close_menu",function(){
 		menu.close();
 	});
-	
+
 });
 
 var snapper = new Snap({
@@ -186,7 +186,7 @@ var snapper = new Snap({
 var menu = new Snap({
     element: document.getElementById('menu'),
     dragger: null,
-    disable: 'left',
+    disable: 'right',
     addBodyClasses: true,
     hyperextensible: true,
     resistance: 0.5,
@@ -270,9 +270,3 @@ function showFollowers() {
 ////////// JS LOADING FOR PAGES /////////
 
 window.addEventListener('push', checkPage);
-
-
-
-
-
-
