@@ -35,7 +35,8 @@
 }
 
 .Imagefullwidth{
-	width:90%
+	height: 40px; 
+	width:auto;
 }
 
 .titolo-notifica{
@@ -50,4 +51,12 @@
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
+}
+
+
+.stretto{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 1px;
+	padding-right: 1px;
 }

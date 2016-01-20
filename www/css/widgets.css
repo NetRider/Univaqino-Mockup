@@ -1,10 +1,10 @@
 .ui-block-b{
 	width:50% !important;
-	float:right !important;
+	float:left !important;
 }
 
 .ui-block-a{
-	float:right !important;
+	float:left !important;
 	width:50% !important;
 }
 

@@ -102,8 +102,8 @@ font-size: 0.7em;
 
 
 .cardImage {
-    width: 30%;
-	height: 30%;
+    width: 40px;
+	height: auto;
 }
 
 .labelCard {
@@ -189,4 +189,8 @@ font-size: 0.7em;
 .avvistaProfButton, .avvistaProfButton:active  {
 	background-color: orange;
 	border: 1px solid orange;
+}
+
+.stretto{
+padding: 0 !important;
 }
