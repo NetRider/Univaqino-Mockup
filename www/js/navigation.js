@@ -238,3 +238,12 @@ function showFollowers() {
 	$("#poloCoppito2Followers").show();
 	$("#poloCoppito1Piano0Followers").show();
 }
+////////// JS LOADING FOR PAGES /////////
+
+window.addEventListener('push', checkPage);
+
+
+
+
+
+

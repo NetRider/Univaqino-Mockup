@@ -348,8 +348,6 @@
 
     options.container = options.container || options.transition ? document.querySelector('.content') : document.body;
 
-    var isFileProtocol = /^file:/.test(window.location.protocol);
-
     for (key in bars) {
       if (bars.hasOwnProperty(key)) {
         options[key] = options[key] || document.querySelector(bars[key]);
@@ -362,21 +360,17 @@
     }
 
     xhr = new XMLHttpRequest();
-    if (isFileProtocol) {
-      xhr.open('GET', options.url, false);
-    } else {
-      xhr.open('GET', options.url, true);
-      xhr.setRequestHeader('X-PUSH', 'true');
+    xhr.open('GET', options.url, true);
+    xhr.setRequestHeader('X-PUSH', 'true');
 
-      xhr.onreadystatechange = function () {
-        if (options._timeout) {
-          clearTimeout(options._timeout);
-        }
-        if (xhr.readyState === 4) {
-          xhr.status === 200 ? success(xhr, options) : failure(options.url);
-        }
-      };
-    }
+    xhr.onreadystatechange = function () {
+      if (options._timeout) {
+        clearTimeout(options._timeout);
+      }
+      if (xhr.readyState === 4) {
+        xhr.status === 200 ? success(xhr, options) : failure(options.url);
+      }
+    };
 
     if (!PUSH.id) {
       cacheReplace({
@@ -393,14 +387,6 @@
     }
 
     xhr.send();
-
-    if (isFileProtocol) {
-      if (xhr.status === 0) {
-        success(xhr, options);
-      } else {
-        failure(options.url);
-      }
-    }
 
     if (xhr.readyState && !options.ignorePush) {
       cachePush();

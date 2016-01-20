@@ -17,8 +17,8 @@
 
 		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.structure.min.css" rel="stylesheet">
 		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.theme.min.css" rel="stylesheet">
-
-		<link href="css/accordion.css" rel="stylesheet">
+<link href="css/profile.css" rel="stylesheet">
+	
 
     	<!-- Include the compiled Ratchet JS -->
     	<script src="libs/ratchet-v2.0.2/js/ratchet.js"></script>
@@ -57,7 +57,7 @@
 
 					  <ul class="table-view pulito ">
 						<li class="table-view-cell pulito">
-						    <a class="navigate-right"  href="selectStatus.html" data-transition="slide">
+						    <a class="navigate-right" data-ignore="push" href="selectStatus.html" data-transition="slide">
 						      <span class="media-object pull-left icon icon-gear"></span>
 						      <div class="media-body">
 						        a lezione
@@ -78,7 +78,7 @@
 						<ul class="table-view pulito ">
 						  <li class="table-view-cell pulito">
 
-							<a class="navigate-right"  href="selectPole.html" data-transition="slide">
+							<a class="navigate-right"  href="selectPole.html" data-ignore="push" data-transition="slide">
 						    	<span><img class="media-object pull-left icon icon-polo" src="img/polo.png">
 						      	<div class="media-body">
 						        Polo appartenenza
@@ -87,7 +87,7 @@
 						    </a>
 						 </li>
 						 <li class="table-view-cell pulito">
-							<a class="navigate-right"  href="corsiSeguiti.html" data-transition="slide">
+							<a class="navigate-right"  href="corsiSeguiti.html" data-ignore="push" data-transition="slide">
 						    	<span class="media-object pull-left icon icon-pages"></span>
 						      	<div class="media-body">
 						        Corsi seguiti
@@ -116,7 +116,7 @@
 								<ul class="table-view pulito ">
 								  <li class="table-view-cell pulito">
 
-									<a class="navigate-right"  href="gestisciPrivacy.html" data-transition="slide">
+									<a class="navigate-right" href="gestisciPrivacy.html" data-ignore="push" data-transition="slide">
 								    	<span class="media-object pull-left icon icon-pages"></span>
 								      	<div class="media-body">
 								        Privacy
@@ -128,32 +128,34 @@
 
 					</li>
 				</ul>
+				
+					
 			</div>
 			<nav class="bar bar-tab">
-	  			<a class="tab-item active tab-item-selected" href="index.html">
+	  			<a class="tab-item active " data-ignore="push" href="index.html">
 	    			<span class="icon icon-home"></span>
 	  			</a>
-				<a class="tab-item" href="profile.html">
+				<a class="tab-item tab-item-selected" data-ignore="push" href="profile.html">
 					<span class="icon icon-compose"></span>
 				</a>
 
-				<a class="tab-item" href="gestione_notifiche.html">
+				<a class="tab-item" data-ignore="push" href="gestione_notifiche.html">
 					<span class="media-object">
 						<img src="img/notifiche.png" class="followersImage">
 					</span>
 				</a>
-				<a class="tab-item" href="listaFollowers.html">
+				<a class="tab-item" data-ignore="push" href="listaFollowers.html">
 					<span class="media-object">
 						<img src="img/followers.png" class="followersImage">
 					</span>
 				</a>
-				<a class="tab-item" href="selezionaProfAvvistamento.html">
+				<a class="tab-item" data-ignore="push" href="selezionaProfAvvistamento.html">
 					<span class="media-object">
 						<img src="img/profMirino.png" class="followersImage">
 					</span>
 				</a>
 			</nav>
-				<link href="css/profile.css" rel="stylesheet">
+			
   	</body>
 
 

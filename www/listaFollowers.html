@@ -45,9 +45,9 @@
 			<div id="contentoffcanvas" class="snap-drawer snap-drawer-right">
 			</div>
 		</div>
-		<div id="contentmain" class="content snap-content">
+		<div id="filtrofollower" class="content">
 
-			<div class="filter">
+			<div class="filter bar bar-standard bar-header-secondary">
 				<div class="segmented-control">
 				    <a id="followerAmici" class="control-item active">Amici</a>
 				    <a id="followerProf" class="control-item">Professori</a>
@@ -56,26 +56,30 @@
 
 			<!-- Lista follower Amici -->
 			<div id="lista">
+			
+			<script src="js/filtrofollower.js"></script>
+		<link href="css/followers.css" rel="stylesheet">
+	
 			</div>
 			<nav class="bar bar-tab">
-				<a class="tab-item active tab-item-selected" href="index.html">
-					<span class="icon icon-home"></span>
-				</a>
-				<a class="tab-item" href="profile.html">
+	  			<a class="tab-item active " data-ignore="push" href="index.html">
+	    			<span class="icon icon-home"></span>
+	  			</a>
+				<a class="tab-item " data-ignore="push" href="profile.html">
 					<span class="icon icon-compose"></span>
 				</a>
 
-				<a class="tab-item" href="gestione_notifiche.html">
+				<a class="tab-item" data-ignore="push" href="gestione_notifiche.html">
 					<span class="media-object">
 						<img src="img/notifiche.png" class="followersImage">
 					</span>
 				</a>
-				<a class="tab-item" href="listaFollowers.html">
+				<a class="tab-item tab-item-selected" data-ignore="push" href="listaFollowers.html">
 					<span class="media-object">
 						<img src="img/followers.png" class="followersImage">
 					</span>
 				</a>
-				<a class="tab-item" href="selezionaProfAvvistamento.html">
+				<a class="tab-item" data-ignore="push" href="selezionaProfAvvistamento.html">
 					<span class="media-object">
 						<img src="img/profMirino.png" class="followersImage">
 					</span>
@@ -83,7 +87,6 @@
 			</nav>
 
 
-		<script src="js/filtrofollower.js"></script>
-		<link href="css/followers.css" rel="stylesheet">
+		
   	</body>
 </html>

@@ -1,20 +1,6 @@
-.card{
-	margin-left:0px;
-	margin-right:0px;
+.padded{
+	margin-left:35px;
 }
-.border-top {
-    border-top: 1px solid #ddd;
-}
-
-.border-bottom {
-    border-bottom: 1px solid #ddd !important;
-}
-
-.table-view-cell>span{
-	font-size:1.2em;
-	margin-left:55px;
-}
-
-.border-top>span{
-	margin-left:21px;
+.padded2{
+	margin-left:34px;
 }

@@ -1,3 +1,10 @@
+#contentoffcanvas{
+	margin-top:35px;
+}
+.icon-search{
+	  margin-left: -29px;
+    margin-right: 9px;
+}
 .bordo_verde>a{
 	border-color: #00802b !important;
 }
@@ -157,7 +164,7 @@ font-size: 0.7em;
 }
 
 .menuCalendar {
-	margin-top: 53px;
+	margin-top: 19px;
 	margin-bottom: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -170,7 +177,7 @@ font-size: 0.7em;
 }
 
 .profInUfficio {
-	margin-top: 70px;
+	margin-top: 19px;
 }
 
 .infoFollowersNavigation

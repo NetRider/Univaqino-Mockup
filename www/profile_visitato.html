@@ -37,13 +37,14 @@
 
 		<!-- Title bar -->
 		<header class="bar bar-nav">
-			<a class="icon icon-left-nav pull-left" href="listaFollowers.html"></a>
+			<a class="icon icon-left-nav pull-left" data-ignore="push" data-transition="slide" data-direction="reverse" href="listaFollowers.html"></a>
   			<h1 class="title">Matteo Polsinelli</h1>
 		</header>
 
 
 		<div class="content spazio-nav">
 			<ul class="table-view">
+			<a> 
 				<li class="card pulito">
 					<img class="imageProfile profilo-image" src="img/matteo.jpg">
 					  <span class="media-object pull-left  "><img id="emailemail" class="email-icon" src="./img/email-icon.png"></span>
@@ -51,12 +52,13 @@
 						        E-mail:  matteo.polsinelli@student.univaq.it
 						      </div>
 				</li>	    
-					  	
+				</a>	  	
 				    
 				  
 			</ul>
 				  
 			<ul class="table-view">
+				  <a>
 				  <li class="card pulito">
 					 
 					  	<ul class="table-view pulito ">
@@ -66,7 +68,8 @@
 					        Stato Corrente: a lezione
 					      </div>
 						</li>
-						
+					</a>
+					<a>	
 						<li class="table-view-cell pulito">
 					    	<span class="media-object pull-left icon icon-pages"></span>
 					      	<div class="media-body">
@@ -74,15 +77,19 @@
 					      	</div>
 							
 						</li>
+					</a>	
 						</ul>
 					    
 						<ul class="table-view pulito ">
+						<a>
 						  <li class="table-view-cell pulito">
 					    	<span class="media-object pull-left icon icon-pages"></span>
 					      	<div class="media-body">
 					        Polo apparteneza: Coppito
 					      	</div>
 						 </li>
+						</a>
+						
 						 <li class="table-view-cell pulito">
 							<a class="navigate-right"  href="#" data-transition="slide">
 						    	<span class="media-object pull-left icon icon-pages"></span>
@@ -93,6 +100,7 @@
 						</li>
 						</ul>
 						<ul class="table-view pulito ">
+						<a>
 						 	<li class="table-view-cell pulito">
 								<span class="media-object pull-left icon icon-pages"></span>
 					     		<div class="media-body">
@@ -102,8 +110,9 @@
 									<div class="toggle-handle"></div>
 								</div>
 							</li>
+						</a>
 							<li class="table-view-cell pulito">
-							<a class="navigate-right"  href="notifiche_follower.html" data-transition="slide">
+							<a class="navigate-right"  data-ignore="push" href="notifiche_follower.html" data-transition="slide">
 						    	<span class="media-object pull-left icon icon-pages"></span>
 						      	<div class="media-body">
 						        Scegli notifiche
@@ -117,29 +126,30 @@
 
 		<!-- Tab Bar -->
 		<nav class="bar bar-tab">
-  			<a class="tab-item" href="#">
-    			<span class="icon icon-home"></span>
-    			<span class="tab-label">Home</span>
-  			</a>
-			<a class="tab-item" href="#">
-				<span class="icon icon-person"></span>
-			    <span class="tab-label">Profilo</span>
-			</a>
-			<a class="tab-item" href="#">
-				<span class="icon icon-search"></span>
-			    <span class="tab-label">Cerca</span>
-			</a>
-			<a class="tab-item" href="#">
-				<span class="media-object">
-					<img src="img/followers.png" class="followersImage">
-				</span>
-			    <span class="tab-label">Followers</span>
-			</a>
-			<a class="tab-item" href="#">
-				<span class="icon icon-bars"></span>
-			    <span class="tab-label">Menu</span>
-			</a>
-		</nav>
+	  			<a class="tab-item active " data-ignore="push" href="index.html">
+	    			<span class="icon icon-home"></span>
+	  			</a>
+				<a class="tab-item " data-ignore="push" href="profile.html">
+					<span class="icon icon-compose"></span>
+				</a>
+
+				<a class="tab-item" data-ignore="push" href="gestione_notifiche.html">
+					<span class="media-object">
+						<img src="img/notifiche.png" class="followersImage">
+					</span>
+				</a>
+				<a class="tab-item tab-item-selected" data-ignore="push" href="listaFollowers.html">
+					<span class="media-object">
+						<img src="img/followers.png" class="followersImage">
+					</span>
+				</a>
+				<a class="tab-item" data-ignore="push" href="selezionaProfAvvistamento.html">
+					<span class="media-object">
+						<img src="img/profMirino.png" class="followersImage">
+					</span>
+				</a>
+			</nav>
+
 		<link href="css/profile.css" rel="stylesheet">
   	</body>
 

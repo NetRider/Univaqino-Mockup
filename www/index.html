@@ -26,7 +26,8 @@
     	<script src="libs/ratchet-v2.0.2/js/ratchet.js"></script>
 		<script src="libs/jquery-1.12.0.min.js"></script>
 		<script src="libs/SnapJs/snap.min.js"></script>
-
+		<script src="js/main.js"></script>
+        <script src="libs/jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
 		<script>
 	    	$(document).bind('mobileinit',function(){
 	        $.mobile.changePage.defaults.changeHash = false;
@@ -34,7 +35,7 @@
 	        $.mobile.pushStateEnabled = false;
 	    	});
 		</script>
-		<script src="libs/jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
+		
 		<link href="css/accordion.css" rel="stylesheet">
 
   	</head>
@@ -57,7 +58,7 @@
 		<header class="bar bar-nav">
 			<a id="freccia_indietro" class="icon icon-left-nav pull-left"></a>
 			<a id="menu_btn" class="icon icon-gear pull-right"></a>
-			<a class="icon icon-search pull-right" href="ricerca.html"></a>
+			<a class="icon icon-search pull-right" data-ignore="push" href="ricerca.html"></a>
 
   			<h2 id= "titleNavigation" class="titleNavigation">Università dell'Aquila</h2>
 		</header>
@@ -137,37 +138,38 @@
 			    </div>
 			</div>
 		</div>
+		<script src="js/navigation.js"></script>
 		</div>
 
 
 		<!-- Tab Bar -->
 
 
-		<nav class="bar bar-tab">
-  			<a class="tab-item active tab-item-selected" href="index.html">
-    			<span class="icon icon-home"></span>
-  			</a>
-			<a class="tab-item" href="profile.html">
-				<span class="icon icon-compose"></span>
-			</a>
+			<nav class="bar bar-tab">
+	  			<a class="tab-item active tab-item-selected" data-ignore="push" href="index.html">
+	    			<span class="icon icon-home"></span>
+	  			</a>
+				<a class="tab-item" data-ignore="push" href="profile.html">
+					<span class="icon icon-compose"></span>
+				</a>
 
-			<a class="tab-item" href="gestione_notifiche.html">
-				<span class="media-object">
-					<img src="img/notifiche.png" class="followersImage">
-				</span>
-			</a>
-			<a class="tab-item" href="listaFollowers.html">
-				<span class="media-object">
-					<img src="img/followers.png" class="followersImage">
-				</span>
-			</a>
-			<a class="tab-item" href="selezionaProfAvvistamento.html">
-				<span class="media-object">
-					<img src="img/profMirino.png" class="followersImage">
-				</span>
-			</a>
-		</nav>
+				<a class="tab-item" data-ignore="push" href="gestione_notifiche.html">
+					<span class="media-object">
+						<img src="img/notifiche.png" class="followersImage">
+					</span>
+				</a>
+				<a class="tab-item" data-ignore="push" href="listaFollowers.html">
+					<span class="media-object">
+						<img src="img/followers.png" class="followersImage">
+					</span>
+				</a>
+				<a class="tab-item" data-ignore="push" href="selezionaProfAvvistamento.html">
+					<span class="media-object">
+						<img src="img/profMirino.png" class="followersImage">
+					</span>
+				</a>
+			</nav>
 
   	</body>
-	<script src="js/navigation.js"></script>
+	
 </html>

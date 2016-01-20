@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 	
-	$("#follow").on("click",function(){
+	$(".content").on("click","#follow",function(){
 		$("#follow span").html(" Richiesta Inviata");
 		$("#follow").removeClass("btn-positive");
 		$("#follow").addClass("btn-negative");
