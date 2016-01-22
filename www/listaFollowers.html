@@ -38,9 +38,32 @@
   	<body>
 
 		<!-- Title bar -->
+
 		<header class="bar bar-nav">
-		<h1 id= "titleNavigation" class="titleNavigation">Following</h1>
-		</header>
+			<a href="#myPopover">
+			    <h1 class="title">
+			      Following
+			      <span class="icon icon-caret"></span>
+			    </h1>
+		  	</a>
+	  	</header>
+
+		<div id="myPopover" class="popover">
+		  <header class="bar bar-nav">
+		    <h1 class="title">Ordina per:</h1>
+		  </header>
+		  <ul class="table-view">
+		    <li class="table-view-cell">Alfabetico</li>
+			<a>
+				<span class="media-object pull-left icon icon-check"></span>
+				<div class="media-body">
+	  				Vicino a me
+				</div>
+  			</a>
+		    <li class="table-view-cell"></li>
+		  </ul>
+	  	</div>
+
 
 
 
