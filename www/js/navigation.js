@@ -54,6 +54,7 @@ $("#P1_C1").on("click",function(){
 
 	$("#P0Coppito1").on("click",".frecciaAula",function(){
 
+		$("#menu_btn").css("display","none");
 
 		//$("#contentmain").removeClass("hassubnav");
         snapper.expand("right");
@@ -65,6 +66,8 @@ $("#P1_C1").on("click",function(){
 
 
 				$("#freccia_indietro").on("click",function(){
+					$("#menu_btn").css("display","block");
+
 							$("#contentoffcanvas").innerHTML="";
 							snapper.close();
 							$("#freccia_indietro").css("display","none");
@@ -81,8 +84,11 @@ $("#P1_C1").on("click",function(){
 		$("#contentoffcanvas").load("./profile_visitato_from_navigation.html");
 		$("#titleNavigation").text("Profilo");
 		$(".bar-header-secondary").css("display","none");
+		$("#menu_btn").css("display","none");
         snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
+					$("#menu_btn").css("display","block");
+
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
 					$("#freccia_indietro").css("display","none");
@@ -96,8 +102,12 @@ $("#P1_C1").on("click",function(){
 		$("#contentoffcanvas").load("./profile_prof_visitato_from_navigation.html");
 		$("#titleNavigation").text("Profilo");
 		$(".bar-header-secondary").css("display","none");
+		$("#menu_btn").css("display","none");
+
         snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
+					$("#menu_btn").css("display","block");
+
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
 					$("#freccia_indietro").css("display","none");
@@ -111,8 +121,12 @@ $("#P1_C1").on("click",function(){
 		$("#contentoffcanvas").load("./schedaUfficioProf.html");
 		$("#titleNavigation").text("Ufficio 301");
 		$(".bar-header-secondary").css("display","none");
+		$("#menu_btn").css("display","none");
+
 		snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
+					$("#menu_btn").css("display","block");
+
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
 					$("#freccia_indietro").css("display","none");
@@ -126,8 +140,12 @@ $("#P1_C1").on("click",function(){
 		$("#contentoffcanvas").load("./schedaUfficioAmministrativo.html");
 		$("#titleNavigation").text("Segreteria Studenti");
 		$(".bar-header-secondary").css("display","none");
+		$("#menu_btn").css("display","none");
+
 		snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
+					$("#menu_btn").css("display","block");
+
 					$("#menucanvas").load("./menu.html");
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
@@ -142,8 +160,12 @@ $("#P1_C1").on("click",function(){
 		$("#contentoffcanvas").load("./schedaLaboratorio.html");
 		$("#titleNavigation").text("Laboratorio");
 		$(".bar-header-secondary").css("display","none");
+		$("#menu_btn").css("display","none");
+
 		snapper.expand("right");
 				$("#freccia_indietro").on("click",function(){
+					$("#menu_btn").css("display","block");
+
 					$("#menucanvas").load("./menu.html");
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
