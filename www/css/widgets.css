@@ -1,3 +1,13 @@
+
+
+.location_grid{
+	padding:5px;
+}
+
+.widget_add{
+	height:50px;
+}
+
 .clock_widget{
 	padding:2px;
 }
@@ -9,6 +19,12 @@
 	border-radius:0px;
 	border: 3px solid #DDD;
 }
+
+.widget-container{
+	text-align:center;
+	border:none
+}
+
 
 .widgets_grid{
 	line-height: 1em;
@@ -47,7 +63,7 @@
 	overflow:visible;
 }
 .person_widget_image{
-	width:32% !important;
+	width:16% !important;
 }
 .person_widget_image_notification{
 	width:80px !important;
@@ -57,9 +73,18 @@
 	padding: 8px 62px 8px 15px;
 }
 
-
-
-
+.location_icon{
+	width:33.3% !important;
+	text-align: center;
+}
+.following-list-element{
+	border:none;
+	margin:0px;
+	border-bottom:1px solid #DDDDDD;
+}
+.no-padding-right{
+	padding-right:10px !important;
+}
 .person_widget_content{
 	margin-top:4px;
 	width:68% !important;
@@ -150,3 +175,20 @@ height: 18px;
   -moz-opacity: 0.30;
   opacity: 0.7;
 }
+.preferiti_txt{
+	padding-top: 4px;
+}
+.aule_widget_image{
+	width: 34% !important;
+}
+.aule_widget_content{
+	width: 60% !important;
+	margin-top: 8px;
+}
+.badge_aule{
+	margin-left:4px;
+}
+.aule_libere_testo{
+	margin-bottom:2px;
+}
+
