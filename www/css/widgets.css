@@ -1,3 +1,18 @@
+.clock_widget{
+	padding:2px;
+}
+
+.margin-top{
+	margin-top:10px;
+}
+.card{
+	border-radius:0px;
+	border: 3px solid #DDD;
+}
+
+.widgets_grid{
+	line-height: 1em;
+}
 .ui-block-b{
 	width:50% !important;
 	float:left !important;
@@ -9,11 +24,129 @@
 }
 
 .widgetImage {
-	margin-left: 20%;
-	width: 100%;
-	height: auto;
+	 
+	
+	width: 50px;
+	height: 50px;
+}
+
+.widgetImageNotifica {
+	
+	
+	width: 80px;
+	height: 80px;
 }
 
 .fullwidth{
 	width:100% !important;
+}
+.center_text{
+	text-align:center;
+}
+.person_widget{
+	overflow:visible;
+}
+.person_widget_image{
+	width:32% !important;
+}
+.person_widget_image_notification{
+	width:80px !important;
+}
+
+.title_widget{
+	padding: 8px 62px 8px 15px;
+}
+
+
+
+
+.person_widget_content{
+	margin-top:4px;
+	width:68% !important;
+}
+
+.widget_icon_container{
+	width:14px !important;
+}
+.widget_text_container_notifica{
+	width: 80% !important;
+	margin-left: 10px;
+margin-top: 5px;
+}
+
+.widget_text_container{
+	width: 80% !important;
+	margin-left: 5px;
+
+}
+
+.widgeticon{
+	width:20px;
+}
+
+.position_text_br{
+	margin-left:20px;
+}
+
+.status_text{
+	padding-bottom: 8px !important;
+vertical-align: middle;
+}
+
+.position_text{
+	padding-bottom: 13px !important;
+vertical-align: middle;
+}
+
+.icon_status{
+	font-size:18px;
+}
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.name { 
+	 background: #000000;
+  filter: alpha(opacity=80);
+  filter: progid: DXImageTransform.Microsoft.Alpha(opacity=30);
+  -moz-opacity: 0.30;
+  opacity: 0.7;
+  zoom: 1;
+  margin-top: 40px;
+	color: #FFFFFF;
+   position: absolute; 
+  font-size: 0.7em;
+text-align: center;
+left: 0;
+   width: 50px; 
+}
+
+.name_notification { 
+	 background: #000000;
+  filter: alpha(opacity=80);
+  filter: progid: DXImageTransform.Microsoft.Alpha(opacity=30);
+  -moz-opacity: 0.30;
+  opacity: 0.7;
+  
+  margin-top: 65px;
+	color: #FFFFFF;
+   position: absolute; 
+  font-size: 1.3em;
+text-align: center;
+left: 0;
+ width: 80px;
+height: 18px;
+}
+
+.notifica_intelligente { 
+	color: #FFFFFF;
+	font-size: 1.3em;
+	text-align:center;
+	 background: #000000;
+  filter: alpha(opacity=80);
+  filter: progid: DXImageTransform.Microsoft.Alpha(opacity=30);
+  -moz-opacity: 0.30;
+  opacity: 0.7;
 }
