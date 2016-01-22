@@ -194,3 +194,15 @@ font-size: 0.7em;
 .stretto{
 padding: 0 !important;
 }
+
+.notifyDiv {
+	margin-left: 0%;
+}
+.notifyImage {
+	margin-left: 10%;
+	margin-top: 10%
+}
+.notifyIcon {
+	width: 20px;
+	height: 20px;
+}
