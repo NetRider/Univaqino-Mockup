@@ -1,8 +1,9 @@
 $( document ).ready(function() {
 
+	console.log("ciao");
+
 	$("#togglePosition").on("toggle",function(){
-		console.log("ciao");
-		
+
 		if($("#togglePosition").hasClass("active"))
 		{
 			$("#formGps").show();
@@ -13,9 +14,17 @@ $( document ).ready(function() {
 		}
 	});
 
-	$("#buttonPosizione").on("click",function() {
-		console.log("cia");
-		$("#selezionaPos").addClass("active");
-	});
+	console.log("ciao due volte");
+
+	$("#segnalaPosButton").click(function(event){
+    	event.preventDefault();
+		$("#modalDivPos").addClass("active");
+  	});
+
+	$("#segnalaPosButton2").click(function(event){
+    	event.preventDefault();
+		$("#modalDivPos").addClass("active");
+  	});
+
 
 });
