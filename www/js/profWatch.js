@@ -1,5 +1,8 @@
 $( document ).ready(function() {
+
 	$("#togglePosition").on("toggle",function(){
+		console.log("ciao");
+		
 		if($("#togglePosition").hasClass("active"))
 		{
 			$("#formGps").show();
@@ -8,6 +11,11 @@ $( document ).ready(function() {
 			$("#formGps").hide();
 			$("#formNormal").show();
 		}
+	});
+
+	$("#buttonPosizione").on("click",function() {
+		console.log("cia");
+		$("#selezionaPos").addClass("active");
 	});
 
 });
