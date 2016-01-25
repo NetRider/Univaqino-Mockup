@@ -16,9 +16,14 @@ $( document ).ready(function() {
 
 	console.log("ciao due volte");
 
-	$("#segnalaPosButton").on("click",function(){
-		console.log("ciao puluto pippo");
+	$("#segnalaPosButton").click(function(event){
+    	event.preventDefault();
+		$("#modalDivPos").addClass("active");
+  	});
 
+	$("#segnalaPosButton2").click(function(event){
+    	event.preventDefault();
+		$("#modalDivPos").addClass("active");
   	});
 
 
