@@ -221,3 +221,13 @@ padding: 0 !important;
 	width: 20px;
 	height: 20px;
 }
+
+.cardOrarioMensa {
+	width: 50%;
+	height: 50%;
+	margin-left: 26%
+}
+
+.orarioMensa {
+	text-align: center;
+}
