@@ -27,7 +27,7 @@
 
 
 .widgets_grid{
-	line-height: 1em;
+
 }
 .ui-block-b{
 	width:50% !important;
@@ -42,8 +42,8 @@
 .widgetImage {
 	 
 	
-	width: 50px;
-	height: 50px;
+	width: 53px;
+	height: 53px;
 }
 
 .widgetImageNotifica {
@@ -114,15 +114,19 @@ margin-top: 5px;
 }
 
 .status_text{
-	padding-bottom: 8px !important;
-vertical-align: middle;
+	position: absolute;
 }
 
 .position_text{
 	padding-bottom: 13px !important;
 vertical-align: middle;
 }
-
+.icon-plus{
+	position: absolute;
+float: right;
+right: 15px;
+line-height: 0.8em;
+}
 .icon_status{
 	font-size:18px;
 }
@@ -133,19 +137,20 @@ vertical-align: middle;
 }
 
 .name { 
-	 background: #000000;
-  filter: alpha(opacity=80);
-  filter: progid: DXImageTransform.Microsoft.Alpha(opacity=30);
-  -moz-opacity: 0.30;
-  opacity: 0.7;
-  zoom: 1;
-  margin-top: 40px;
-	color: #FFFFFF;
-   position: absolute; 
-  font-size: 0.7em;
+background: #000000;
+filter: alpha(opacity=80);
+filter: progid: DXImageTransform.Microsoft.Alpha(opacity=30);
+-moz-opacity: 0.30;
+opacity: 0.7;
+zoom: 1;
+margin-top: 42px;
+color: #FFFFFF;
+position: absolute;
+font-size: 0.7em;
 text-align: center;
 left: 0;
-   width: 50px; 
+width: 53px;
+line-height: 1.5em;
 }
 
 .name_notification { 
@@ -177,13 +182,9 @@ height: 18px;
 }
 
 .following-position-text{
-	padding-top: 6px;
-vertical-align: middle;
+position: absolute;
 }
-.preferiti_txt{
-	padding-top: 10px;
-vertical-align: middle;
-}
+
 .aule_widget_image{
 	width: 34% !important;
 }

@@ -1,5 +1,4 @@
-$(function() {
-
+$( document ).ready(function() {
 	$.fn.scrollTo = function( target, options, callback ){
 		  if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
 		  var settings = $.extend({
@@ -16,41 +15,71 @@ $(function() {
 		      if (typeof callback == 'function') { callback.call(this); }
 		    });
 		  });
-		}
-
-
-
-	$("#freccia_indietro").css("display","none");
-
-
+		};
 
 	$("#P0_C1").on("click",function(){
 
-		$('#contentmain').scrollTo('#P0_C1');
+			$('#contentmain').scrollTo('#P0_C1');
 
-	});
+		});
 
-$("#P1_C1").on("click",function(){
+	$("#P1_C1").on("click",function(){
 
-		$('#contentmain').scrollTo('#P1_C1');
+			$('#contentmain').scrollTo('#P1_C1');
 
-	});
+		});
+	
+	function movetoPolo(){
 
-	$("#aulebar").on("click",function(){
-		impostaAule();
-	});
+		$('body').scrollTo('#coppito1');
+	};
+		
+	var snapper = new Snap({
+    element: document.getElementById('contentmain'),
+    dragger: null,
+    disable: 'left',
+    addBodyClasses: true,
+    hyperextensible: true,
+    resistance: 0.5,
+    flickThreshold: 50,
+    transitionSpeed: 0.3,
+    easing: 'ease',
+    maxPosition: 266,
+    minPosition: -266,
+    tapToClose: true,
+    touchToDrag: false,
+    slideIntent: 20,
+    minDragDistance: 5
+});
 
-	$("#followerbar").on("click",function(){
-		impostaFollowers();
-	});
+var menu = new Snap({
+    element: document.getElementById('menu'),
+    dragger: null,
+    disable: 'right',
+    addBodyClasses: true,
+    hyperextensible: true,
+    resistance: 0.5,
+    flickThreshold: 50,
+    transitionSpeed: 0.3,
+    easing: 'ease',
+    maxPosition: 266,
+    minPosition: -266,
+    tapToClose: true,
+    touchToDrag: true,
+    slideIntent: 20,
+    minDragDistance: 40
+});
 
-	$("#profbar").on("click",function(){
-		impostaProfessori();
-	});
+$("#menucanvas").load("./menu.html");
+$("#menu_btn").on("click",function(){
 
-	$("#ufficiobar").on("click",function(){
-		impostaUffici();
-	});
+		menu.open("left");
+});
+
+	$("#menucanvas").on("click","#close_menu",function(){
+	menu.close();
+});
+
 
 	$("#P0Coppito1").on("click",".frecciaAula",function(){
 
@@ -175,58 +204,27 @@ $("#P1_C1").on("click",function(){
 				});
 	});
 
+	
+
+
+
+
+$("#aulebar").on("click",function(){
 	impostaAule();
-	$("#menucanvas").load("./menu.html");
-	$("#menu_btn").on("click",function(){
-			menu.open("left");
-	});
-
-		$("#menucanvas").on("click","#close_menu",function(){
-		menu.close();
-	});
-
 });
 
-var snapper = new Snap({
-    element: document.getElementById('contentmain'),
-    dragger: null,
-    disable: 'left',
-    addBodyClasses: true,
-    hyperextensible: true,
-    resistance: 0.5,
-    flickThreshold: 50,
-    transitionSpeed: 0.3,
-    easing: 'ease',
-    maxPosition: 266,
-    minPosition: -266,
-    tapToClose: true,
-    touchToDrag: false,
-    slideIntent: 20,
-    minDragDistance: 5
+$("#followerbar").on("click",function(){
+	impostaFollowers();
 });
 
-var menu = new Snap({
-    element: document.getElementById('menu'),
-    dragger: null,
-    disable: 'right',
-    addBodyClasses: true,
-    hyperextensible: true,
-    resistance: 0.5,
-    flickThreshold: 50,
-    transitionSpeed: 0.3,
-    easing: 'ease',
-    maxPosition: 266,
-    minPosition: -266,
-    tapToClose: true,
-    touchToDrag: true,
-    slideIntent: 20,
-    minDragDistance: 40
+$("#profbar").on("click",function(){
+	impostaProfessori();
 });
 
-function movetoPolo(){
+$("#ufficiobar").on("click",function(){
+	impostaUffici();
+});
 
-	$('body').scrollTo('#coppito1');
-}
 
 function impostaAule()
 {
@@ -290,5 +288,9 @@ function showFollowers() {
 	$("#poloCoppito1Piano0Followers").show();
 }
 ////////// JS LOADING FOR PAGES /////////
+$("#freccia_indietro").css("display","none");
+impostaAule();
 
 window.addEventListener('push', checkPage);
+
+})
