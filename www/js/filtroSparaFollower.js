@@ -1,11 +1,11 @@
 impostaFollowersAmici();
 
-$("#followerAmici").on("click",function(){
+$("#followerAmici_spara").on("click",function(){
 
 		impostaFollowersAmici();
 	});
 
-	$("#followerProf").on("click",function(){
+	$("#followerProf_spara").on("click",function(){
 		impostaFollowersProf();
 	});
 
@@ -17,16 +17,16 @@ function impostaFollowersAmici()
 
 
 
-	$("#lista").load("./FollowerAmiciSpara.html");
+	$("#lista_spara").load("./FollowerAmiciSpara.html");
 
 	$(".active").removeClass("active");
-	$("#followerAmici").addClass("active");
+	$("#followerAmici_spara").addClass("active");
 }
 
 function impostaFollowersProf()
 {
-	$("#lista").load("./FollowerProfSpara.html");
+	$("#lista_spara").load("./FollowerProfSpara.html");
 
 	$(".active").removeClass("active");
-	$("#followerProf").addClass("active");
+	$("#followerProf_spara").addClass("active");
 }

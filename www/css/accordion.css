@@ -49,6 +49,11 @@
 }
 
 
+#titleNavigation{
+	text-align:center;
+	font-size:20px;
+margin-top: 12px;
+}
 .titleNavigation{
 	text-align:center;
 	font-size:20px;
