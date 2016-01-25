@@ -1,3 +1,9 @@
+
+.segui_txt{
+	font-size: 1.3em !important;
+margin-top: 4px !important;
+}
+
 .thumbnail{
 	height: 60px !important;
     margin-right: 20px !important;
@@ -16,7 +22,7 @@
 
 
 .icon_button{
-	font-size: 1.1em !important;
+	
 }
 .media-body{
 	font-weight:bold;

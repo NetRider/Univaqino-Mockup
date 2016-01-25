@@ -1,9 +1,10 @@
-$( document ).ready(function() {
+
 	
-	$(".content").on("click","#follow",function(){
-		$("#follow span").html(" Richiesta Inviata");
-		$("#follow").removeClass("btn-positive");
-		$("#follow").addClass("btn-negative");
+	
+	$(".content").on("click","#follow_ricerca",function(){
+		$("#follow_ricerca span").html(" Richiesta Inviata");
+		$("#follow_ricerca").removeClass("btn-positive");
+		$("#follow_ricerca").addClass("btn-negative");
 	});
 	
 	$(".search-icon").on("click",function(){
@@ -24,8 +25,7 @@ $( document ).ready(function() {
 	});
 
 	impostaStudenti();	
-	
-})
+
 
 
 
