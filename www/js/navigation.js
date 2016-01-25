@@ -71,6 +71,7 @@ var menu = new Snap({
 });
 
 $("#menucanvas").load("./menu.html");
+
 $("#menu_btn").on("click",function(){
 
 		menu.open("left");
@@ -81,15 +82,17 @@ $("#menu_btn").on("click",function(){
 });
 
 
+	/////MOSTRA AULA OFFCANVAS////////
+	
 	$("#P0Coppito1").on("click",".frecciaAula",function(){
 
 		$("#menu_btn").css("display","none");
-
+		
 		//$("#contentmain").removeClass("hassubnav");
         snapper.expand("right");
       $("#freccia_indietro").css("display","block");
 		$("#contentoffcanvas").load("./schedaAula.html");
-		$("#titleNavigation").text("Aula");
+		$(".titleNavigation").text("Aula");
 		$(".bar-header-secondary").css("display","none");
 
 
@@ -101,7 +104,7 @@ $("#menu_btn").on("click",function(){
 							snapper.close();
 							$("#freccia_indietro").css("display","none");
 
-							$("#titleNavigation").text("Università dell'Aquila");
+							$(".titleNavigation").text("Università dell'Aquila");
 							$(".bar-header-secondary").css("display","block");
 
 							//$("#contentmain").addClass("hassubnav");
@@ -111,7 +114,7 @@ $("#menu_btn").on("click",function(){
 	$("#P0Coppito1").on("click",".frecciaProfilo",function(){
 		$("#freccia_indietro").css("display","block");
 		$("#contentoffcanvas").load("./profile_visitato_from_navigation.html");
-		$("#titleNavigation").text("Profilo");
+		$(".titleNavigation").text("Matteo Polsinelli");
 		$(".bar-header-secondary").css("display","none");
 		$("#menu_btn").css("display","none");
         snapper.expand("right");
@@ -121,7 +124,7 @@ $("#menu_btn").on("click",function(){
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
 					$("#freccia_indietro").css("display","none");
-					$("#titleNavigation").text("Università dell'Aquila");
+					$(".titleNavigation").text("Università dell'Aquila");
 					$(".bar-header-secondary").css("display","block");
 				});
 	});
@@ -129,7 +132,7 @@ $("#menu_btn").on("click",function(){
 	$("#P0Coppito1").on("click",".frecciaProf",function(){
 		$("#freccia_indietro").css("display","block");
 		$("#contentoffcanvas").load("./profile_prof_visitato_from_navigation.html");
-		$("#titleNavigation").text("Profilo");
+		$(".titleNavigation").text("Costanzo Manes");
 		$(".bar-header-secondary").css("display","none");
 		$("#menu_btn").css("display","none");
 
@@ -140,7 +143,7 @@ $("#menu_btn").on("click",function(){
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
 					$("#freccia_indietro").css("display","none");
-					$("#titleNavigation").text("Università dell'Aquila");
+					$(".titleNavigation").text("Università dell'Aquila");
 					$(".bar-header-secondary").css("display","block");
 				});
 	});
@@ -148,7 +151,7 @@ $("#menu_btn").on("click",function(){
 	$("#P0Coppito1").on("click",".frecciaUfficioProf",function(){
 		$("#freccia_indietro").css("display","block");
 		$("#contentoffcanvas").load("./schedaUfficioProf.html");
-		$("#titleNavigation").text("Ufficio 301");
+		$(".titleNavigation").text("Ufficio 301");
 		$(".bar-header-secondary").css("display","none");
 		$("#menu_btn").css("display","none");
 
@@ -159,7 +162,7 @@ $("#menu_btn").on("click",function(){
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
 					$("#freccia_indietro").css("display","none");
-					$("#titleNavigation").text("Università dell'Aquila");
+					$(".titleNavigation").text("Università dell'Aquila");
 					$(".bar-header-secondary").css("display","block");
 				});
 	});
@@ -167,7 +170,7 @@ $("#menu_btn").on("click",function(){
 	$("#P0Coppito1").on("click",".frecciaUfficioAmministrativo",function(){
 		$("#freccia_indietro").css("display","block");
 		$("#contentoffcanvas").load("./schedaUfficioAmministrativo.html");
-		$("#titleNavigation").text("Segreteria Studenti");
+		$(".titleNavigation").text("Segreteria Studenti");
 		$(".bar-header-secondary").css("display","none");
 		$("#menu_btn").css("display","none");
 
@@ -179,7 +182,7 @@ $("#menu_btn").on("click",function(){
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
 					$("#freccia_indietro").css("display","none");
-					$("#titleNavigation").text("Università dell'Aquila");
+					$(".titleNavigation").text("Università dell'Aquila");
 					$(".bar-header-secondary").css("display","block");
 				});
 	});
@@ -187,7 +190,7 @@ $("#menu_btn").on("click",function(){
 	$("#P0Coppito1").on("click",".frecciaLaboratorio",function(){
 		$("#freccia_indietro").css("display","block");
 		$("#contentoffcanvas").load("./schedaLaboratorio.html");
-		$("#titleNavigation").text("Laboratorio");
+		$(".titleNavigation").text("Laboratorio");
 		$(".bar-header-secondary").css("display","none");
 		$("#menu_btn").css("display","none");
 
@@ -199,7 +202,7 @@ $("#menu_btn").on("click",function(){
 					$("#contentoffcanvas").innerHTML="";
 					snapper.close();
 					$("#freccia_indietro").css("display","none");
-					$("#titleNavigation").text("Università dell'Aquila");
+					$(".titleNavigation").text("Università dell'Aquila");
 					$(".bar-header-secondary").css("display","block");
 				});
 	});
@@ -268,7 +271,7 @@ function impostaUffici()
 	$("#P1Coppito1").load("./UfficiCoppito1.html #P1");
 	$("#P2Coppito1").load("./UfficiCoppito1.html #P2");
 	$(".active").removeClass("active");
-	$("#ufficibar").addClass("active");
+	$("#ufficiobar").addClass("active");
 }
 
 function hideFollowers()

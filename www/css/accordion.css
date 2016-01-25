@@ -1,3 +1,8 @@
+.accordion_card{
+	line-height: 1.5em;
+	padding: 8px 60px 7px 11px;
+}
+
 #contentoffcanvas{
 	margin-top:35px;
 }
@@ -44,13 +49,23 @@
 }
 
 
-#titleNavigation{
+.titleNavigation{
 	text-align:center;
 	font-size:20px;
 margin-top: 12px;
 }
 
+.position_profile_visitato_text{
+	position: absolute;
+vertical-align: middle;
+top: 31%;
+margin-left: 5px;
+}
 
+.position_profile_visitato_icon{
+	width: 34px;
+margin-left: -4px;
+}
 
 /* Notifica urgente */
 #notification-red-polo>h3>a, #notification-red-edificio>h3>a, #notification-red-piano>h3>a {
@@ -78,7 +93,7 @@ font-size: 0.7em;
 
 
 .statusAula{
-	margin-left:30%;
+	margin-left: 15%;
 }
 
 
@@ -102,7 +117,7 @@ font-size: 0.7em;
 
 
 .cardImage {
-    width: 40px;
+   width: 49px;
 	height: auto;
 }
 
