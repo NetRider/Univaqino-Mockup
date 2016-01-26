@@ -44,7 +44,7 @@
 				<div class="content spazio-nav">
 			<ul class="table-view">
 			
-				<li class="card pulito">
+				<li class="pulito">
 					<img class="imageProfile profilo-image" src="img/manes.jpg">
 
 					<span class="media-object pull-left "><img class="email-icon" src="./img/email-icon.png"></span>
@@ -69,29 +69,31 @@
 			
 			</ul>
 			<ul class="table-view">
-			   <a>
-				  <li>
-					  	<ul class="table-view pulito ">
-							<li class="table-view-cell pulito">
-							    <a>
+			   
+				  <li class="pulito">
+					  <ul class="table-view pulito ">
+					    	<a>
+							   <li class="table-view-cell pulito">
+							    
 							      <span class="media-object pull-left icon icon-compose"></span>
 							      <div class="media-body">
 							        A lezione
 							      </div>
-							     </a>
-							</li>
-					</a>
-					<a>
+							     
+							  </li>
+				    	   </a>
+					       <a>
 							<li class="table-view-cell pulito">
 								<span class="media-object">
-						    		<img class="media-object widgeticon" src="img/position.png">
+						    		<img class="media-object position_profile_visitato_icon" src="img/position.png">
 						    	</span>
-						      	<span class="media-body">
+						      	<span class="media-body position_profile_visitato_text">
 						        Posizione: coppito-blocco 1-piano 2
 					      		</span>
 							</li>
-					</a>
-	
+				        	</a>
+					   </ul>
+	                   <ul class="table-view pulito ">
 						 	<li class="table-view-cell pulito">
 								<a class="navigate-right"  data-ignore="push" href="corsiProf.html" data-transition="slide">
 						    		<span class="media-object pull-left icon icon-pages"></span>
@@ -100,7 +102,8 @@
 						      		</div>
 								</a>
 							</li>
-
+						</ul>
+						<ul class="table-view pulito ">
 							<li class="table-view-cell pulito">
 								<a>
 								   <span class="media-object pull-left icon icon-pages"></span>
@@ -126,12 +129,21 @@
 			</div>
 
 		<!-- Tab Bar -->
-		<nav class="bar bar-tab">
-	  			<a class="tab-item active " data-ignore="push" href="index.html">
+			<nav class="bar bar-tab">
+	  			<a class="tab-item" data-ignore="push" href="index.html">
 	    			<span class="icon icon-home"></span>
 	  			</a>
-				<a class="tab-item " data-ignore="push" href="profile.html">
-					<span class="icon icon-compose"></span>
+
+				<a class="tab-item" data-ignore="push" href="home.html">
+					<span class="media-object">
+						<img src="img/launchpad.png" class="followersImage">
+					</span>
+				</a>
+
+					<a class="tab-item" data-ignore="push" href="selezionaAvvistamento.html">
+					<span class="media-object">
+						<img src="img/profMirino.png" class="followersImage">
+					</span>
 				</a>
 
 				<a class="tab-item" data-ignore="push" href="gestione_notifiche.html">
@@ -139,16 +151,12 @@
 						<img src="img/notifiche.png" class="followersImage">
 					</span>
 				</a>
-				<a class="tab-item tab-item-selected" data-ignore="push" href="listaFollowers.html">
+				<a class="tab-item" data-ignore="push" href="listaFollowers.html">
 					<span class="media-object">
 						<img src="img/followers.png" class="followersImage">
 					</span>
 				</a>
-				<a class="tab-item" data-ignore="push" href="selezionaProfAvvistamento.html">
-					<span class="media-object">
-						<img src="img/profMirino.png" class="followersImage">
-					</span>
-				</a>
+
 			</nav>
 
 		<link href="css/profile.css" rel="stylesheet">

@@ -1,5 +1,37 @@
 
 
+.move-left{
+	margin-left: 20px;
+}
+.fade_out_page{
+	background: #000000;
+  filter: alpha(opacity=80);
+  filter: progid: DXImageTransform.Microsoft.Alpha(opacity=30);
+  -moz-opacity: 0.30;
+  opacity: 0.9;
+  z-index:400;
+  position:absolute;
+  width:100%;
+  height:100%;
+  display:none;
+}
+.center{
+	text-align:center;
+}
+.widget_select_div{
+	position: absolute;
+width: 70%;
+
+z-index: 6000;
+top: 30%;
+left: 15%;
+border-radius: 20px;
+display:none;
+}
+.slider{
+	    background-color: #FFFFFF;
+}
+}
 .location_grid{
 	padding:5px;
 }
@@ -15,7 +47,7 @@
 .margin-top{
 	margin-top:10px;
 }
-.card{
+.card_widget{
 	border-radius:0px;
 	border: 3px solid #DDD;
 }
@@ -72,6 +104,10 @@
 .title_widget{
 	padding: 8px 62px 8px 15px;
 }
+.title_aggiungi_widget{
+	padding: 0px 10px 0px 2px;
+text-align: center;
+}
 
 .location_icon{
 	width:33.3% !important;
@@ -87,7 +123,7 @@
 }
 .person_widget_content{
 	margin-top:4px;
-	width:68% !important;
+	width:72% !important;
 }
 
 .widget_icon_container{
@@ -121,7 +157,7 @@ margin-top: 5px;
 	padding-bottom: 13px !important;
 vertical-align: middle;
 }
-.icon-plus{
+.icon-plus-widget{
 	position: absolute;
 float: right;
 right: 15px;
@@ -206,13 +242,74 @@ position: absolute;
   filter: alpha(opacity=80);
   filter: progid: DXImageTransform.Microsoft.Alpha(opacity=30);
   -moz-opacity: 0.30;
-  opacity: 0.7;
+  opacity: 0.9;
   z-index:800;
  display:none;
+ margin-left: -3px;
+
+margin-top: -3px;
 }
+
+#remove_miei_corsi{
+	position:absolute;
+	font-size: 1.3em;
+	text-align:center;
+	 background: #000000;
+  filter: alpha(opacity=80);
+  filter: progid: DXImageTransform.Microsoft.Alpha(opacity=30);
+  -moz-opacity: 0.30;
+  opacity: 0.9;
+  z-index:800;
+ display:none;
+ margin-left: -3px;
+
+margin-top: -3px;
+}
+
+#remove_widget_preferiti{
+	position:absolute;
+	font-size: 1.3em;
+	text-align:center;
+	 background: #000000;
+  filter: alpha(opacity=80);
+  filter: progid: DXImageTransform.Microsoft.Alpha(opacity=30);
+  -moz-opacity: 0.30;
+  opacity: 0.9;
+  z-index:800;
+ display:none;
+ margin-left: -3px;
+margin-top: -3px;
+}
+
+
 
 .widget_remove{
 	width: 70px;
 vertical-align: middle;
 float: right;
+}
+
+.follower-grid{
+	width:100% !important
+}
+
+.widgeticon_small{
+	height:20px;
+	width:20px;
+}
+.widgetImage_small{
+	height:35px;
+	width:35px;
+}
+.move-down{
+	padding-top: 4px;
+}
+.widget_div_close{
+	margin-bottom: -2px;
+	color:#000000;
+	background-color:#ff8080;
+	padding: 5px 10px 5px 2px;
+}
+.select_widget{
+	border-color:#adebad;
 }

@@ -19,13 +19,14 @@
 		<link href="libs/jquery.mobile.custom/jquery.mobile-1.4.5.css" rel="stylesheet">
 
 		<link href="libs/SnapJs/snap.css" rel="stylesheet">
-
+       
 		<link href="css/profile.css" rel="stylesheet">
 
     	<!-- Include the compiled Ratchet JS -->
     	<script src="libs/ratchet-v2.0.2/js/ratchet.js"></script>
 		<script src="libs/jquery-1.12.0.min.js"></script>
 		<script src="libs/SnapJs/snap.min.js"></script>
+		<script src="libs/slick/slick.min.js"></script>
 		<script src="js/main.js"></script>
 		
         <script src="libs/jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
@@ -39,13 +40,179 @@
       
 		<link href="css/accordion.css" rel="stylesheet">
         <link href="css/widgets.css" rel="stylesheet">
-        
+         <link href="libs/slick/slick.css" rel="stylesheet"> 
           
 	
         
   	</head>
   	<body>
 		<!-- Title bar -->
+<div class="fade_out_page"></div>
+        <div class="widget_select_div">
+        
+        <ul class="person_widget table-view">
+							
+				 <li class="table-view-cell media title_widget ">
+				         <a>
+							   <span class="media-body">Aggiungi Widget</span> 
+							   
+								 </a>
+				 </li>
+										 
+				 <li>
+		<div class="ui-grid-b widgets_grid ui-responsive">
+			
+<!-- ------------------------------WIDGET AULE LIBERE AGGIUNGI---------------------------------------- -->
+			
+			 	<div class="ui-block-a">
+		
+					<div id="aggiungi_aule_libere" class="card card_widget" >
+					
+					<ul class="person_widget table-view">
+							
+							 <li class="table-view-cell title_aggiungi_widget">
+								    <span class="media-body"><strong>Aule Libere</strong></span> 
+							 </li>
+							
+							<li class="center">
+								            <img class="widgetImage widgetImage_small" src="img/aula_fica.jpg">
+						   </li>		
+						</ul>
+					</div>
+				
+				</div>
+				
+				
+				<!-- ------------------------------AGGIUNGI WIDGET CORSI  ---------------------------------------- -->
+			 	<div class="ui-block-b">
+					<div id="aggiungi_miei_corsi" class="card card_widget">
+					
+									
+						<ul class="person_widget table-view">
+							
+							 <li class="table-view-cell  title_aggiungi_widget">
+							 	    <span class="media-body"><strong>I Miei Corsi</strong></span> 
+							  </li>
+							
+							
+					  					<li class="center">
+								            <img class="widgetImage widgetImage_small" src="img/lecture.png">
+								           
+								            </img>
+								            
+					  					</li>
+					  		
+						</ul>
+					</div>
+			  </div>
+			</div>
+										 
+	    </li>
+        <li>
+ 
+     <!-- ------------------------------AGGIUNGI WIDGET PREFERITI  ---------------------------------------- -->
+			 	
+    <div id="aggiungi_widget_preferiti" class="card card_widget ">
+		
+	<ul class="table-view">
+	
+			<li class="table-view-cell title_aggiungi_widget follower_widget_add ">
+			      
+				   <span class="media-body preferiti_txt"><strong>Preferiti</strong></span> 
+								
+			</li>
+			<div class="card card_widget following-list-element">
+						<ul class="person_widget table-view">
+							
+								<div class="ui-grid-b widgets_grid">
+							        <div class="ui-block-a person_widget_image">
+					  					<li class="image">
+								            <img class="pull-left widgetImage widgetImage_small" src="img/user_widget.png">
+								            
+								            </img>
+								            
+					  					</li>
+					  					
+                                    </div>
+														 
+							        <div class="ui-block-b move-left person_widget_content">
+					  	                          <div class="ui-grid-b widgets_grid move-down">
+							                           <div class="ui-block-a person_widget_image">
+					  					                           	<li>
+											                   <span class="icon icon-compose icon_status"></span>
+											                    <span class="textCard status_text">Status</span>
+														 </li>
+														 </div>
+							                         <div class="ui-block-b move-left">
+					                                     	 <img class="media-object widgeticon widgeticon_small" src="img/position.png">
+												
+                                                              <span class="textCard following-position-text">Posizione </span>
+								                       </div>
+	                                               </div>
+	                                   
+							     	</div>
+							     					 
+					  		
+                       			  </div>
+						
+							
+						</ul>
+					</div>
+					
+			<div class="card card_widget following-list-element">
+						<ul class="person_widget table-view">
+							
+								<div class="ui-grid-b widgets_grid">
+							        <div class="ui-block-a person_widget_image">
+					  					<li class="image">
+								            <img class="pull-left widgetImage widgetImage_small" src="img/user_widget.png">
+								            
+								            </img>
+								            
+					  					</li>
+					  					
+                                    </div>
+														 
+							        <div class="ui-block-b move-left person_widget_content">
+					  	                          <div class="ui-grid-b widgets_grid move-down">
+							                           <div class="ui-block-a person_widget_image">
+					  					                           	<li>
+											                   <span class="icon icon-compose icon_status"></span>
+											                    <span class="textCard status_text">Status</span>
+														 </li>
+														 </div>
+							                         <div class="ui-block-b move-left">
+					                                     	 <img class="media-object widgeticon widgeticon_small" src="img/position.png">
+												
+                                                              <span class="textCard following-position-text">Posizione </span>
+								                       </div>
+	                                               </div>
+	                                   
+							     	</div>
+							     					 
+					  		
+                       			  </div>
+						
+							
+						</ul>
+					</div>
+					
+				</ul>
+		</div>
+        
+        
+        
+        
+        </li>
+        
+         <li class="table-view-cell media title_widget widget_div_close center">
+				     
+				      <span class="chiudi_aggiungi_widget media-body"><strong>Chiudi</strong></span> 
+					
+				 </li>
+        
+        
+        </div>
 
 		<div class="snap-drawers">
 			<div id="menucanvas_index" class="snap-drawer snap-drawer-left">
@@ -55,11 +222,10 @@
 		<div id="menu_index" class="content snap-content">
 
 		<header class="bar bar-nav">
-	
 			<a id="menu_btn_index" class="icon icon-bars pull-left"></a>
+			<a class="icon icon-compose pull-right" data-ignore="push" href="cambiaStatus.html"></a>
 			<a class="icon icon-search pull-right" data-ignore="push" href="ricerca.html"></a>
-
-  			<h2 id= "titleNavigation" class="titleNavigation">Università dell'Aquila</h2>
+			<h2 class="titleNavigation">Università dell'Aquila</h2>
 		</header>
 
 
@@ -67,7 +233,7 @@
 
 <!-- ------------------------------------------_WIDGET POLO -------------------------------------- -->
 
- <div id="polo_widget" class="card">
+ <div id="polo_widget" class="card card_widget">
 					<ul class="person_widget table-view">
 							
 							 <li class="table-view-cell media title_widget">
@@ -125,75 +291,145 @@
 
 <!-- ---------------------------------------_WIDGET NOTIFICA INTELLIGENTE ---------------------------- -->
 			
-				 <div  id="notification_widget" class="card">
-					<ul class="person_widget table-view">
+				 <div  id="notification_widget" class="card card_widget">
+					
+									<ul class="person_widget table-view">
 							
-							 <li class="table-view-cell media title_widget">
-							 <a>
-							    <span class="media-body">Notifiche</span> 
-							  <span class="badge">17</span>
-							 </a>
-							 </li>
+										 <li class="table-view-cell media title_widget">
+										 <a>
+							  			  <span class="media-body">Notifiche</span> 
+										  <span class="badge">17</span>
+							 			 </a>
+										 </li>
 							 
 							
+					        <div class="single-item-rtl slider">
+				
+				
+						        	<div>
 							 
-								<div class="ui-grid-b widgets_grid">
+										<div class="ui-grid-b widgets_grid">
 								
-								     <div  class="ui-block-a person_widget_image_notification">
+								   					  <div  class="ui-block-a person_widget_image_notification">
 							        
-					  					<li class="image">
-								            <img class="pull-left widgetImageNotifica" src="img/notifica_intelligente.png">
-								            </img>
+					  									<li class="image">
+								          				  <img class="pull-left widgetImageNotifica" src="img/notifica_intelligente.png">
+								         				   </img>
 								            
-					  					</li>
+					  									</li>
 					  					
-                                    </div>
+                               					       </div>
                                    
 								          
 														 
-							        <div data-snap-ignore="true" class="ui-block-b person_widget_content">
+								    			    <div data-snap-ignore="true" class="ui-block-b person_widget_content">
 					  	
 								      
-										<li class="margin-top">
-											<div class="ui-grid-b widgets_grid">
-							 					  <div class="ui-block-a widget_icon_container ">
-													   <img class="media-object widgeticon clock_widget" src="img/clock-green.png">
-												  </div>
+													<li class="margin-top">
+														<div class="ui-grid-b widgets_grid">
+							 									  <div class="ui-block-a widget_icon_container ">
+															   <img class="media-object widgeticon clock_widget" src="img/clock-green.png">
+																  </div>
 								
-							 			          <div class="ui-block-b widget_text_container_notifica">
+							 			    			      <div class="ui-block-b widget_text_container_notifica">
 							    	
-								 					   <span class="textCard ">Questa Aula sarà libera fino alle 16:00 </span>
+								 								   <span class="textCard ">Questa Aula sarà libera fino alle 16:00 </span>
 							     					
-										    		</div>
+										    					</div>
 						     	
-						 				   </div> 
-										</li>
+						 				  					 </div> 
+															</li>
 							
-										<li class="margin-top">
-											<div class="ui-grid-b widgets_grid">
-							 					  <div class="ui-block-a widget_icon_container">
-													   <img class="media-object widgeticon" src="img/position.png">
-												  </div>
+													<li class="margin-top">
+															<div class="ui-grid-b widgets_grid">
+							 								  <div class="ui-block-a widget_icon_container">
+															   <img class="media-object widgeticon" src="img/position.png">
+														  </div>
 								
-							 			          <div class="ui-block-b widget_text_container_notifica">
+							 			      			    <div class="ui-block-b widget_text_container_notifica">
 							    	
-								 					   <span class="textCard ">Coppito 1 </span>
-							     					   <span class="textCard ">Aula 1.2</span>
-										    		</div>
+								 							   <span class="textCard ">Coppito 1 </span>
+							     							   <span class="textCard ">Aula 1.2</span>
+										    				</div>
 						     	
-						 				   </div> 
-										</li>
+						 								   </div> 
+														</li>
 					  		
-                       			  </div>
-						</div>
+                       			  					</div>
+												</div>
 						
-						  <li class="notifica_intelligente">
-							   <span class="name_notifica_intelligente">Notifica Intelligente</span>					
+						 				 <li class="notifica_intelligente">
+											   <span class="name_notifica_intelligente">Notifica Intelligente</span>					
 							
-							 </li>
+											 </li>
 							
-						</ul>
-				 </div>
+							
+							 </div>
+							 
+							  	
+							  	<div>
+										 
+												<div class="ui-grid-b widgets_grid">
+								
+								   					  <div  class="ui-block-a person_widget_image_notification">
+							        
+					  									<li class="image">
+								          				  <img class="pull-left widgetImageNotifica" src="img/notifica_intelligente.png">
+								         				   </img>
+								            
+					  									</li>
+					  					
+                               					       </div>
+                                   
+								          
+														 
+								                           <div data-snap-ignore="true" class="ui-block-b person_widget_content">
+					  	
+								      
+													<li class="margin-top">
+														<div class="ui-grid-b widgets_grid">
+							 									  <div class="ui-block-a widget_icon_container ">
+															   <img class="media-object widgeticon clock_widget" src="img/clock-green.png">
+																  </div>
+								
+							 			    			      <div class="ui-block-b widget_text_container_notifica">
+							    	
+								 								   <span class="textCard ">Qibera fino alle 16:00 </span>
+							     					
+										    					</div>
+						     	
+						 				  					 </div> 
+															</li>
+							
+													<li class="margin-top">
+															<div class="ui-grid-b widgets_grid">
+							 								  <div class="ui-block-a widget_icon_container">
+															   <img class="media-object widgeticon" src="img/position.png">
+														  </div>
+								
+							 			      			    <div class="ui-block-b widget_text_container_notifica">
+							    	
+								 							   <span class="textCard ">Coppito 5 </span>
+							     							   <span class="textCard ">Aula 1.2</span>
+										    				</div>
+						     	
+						 								   </div> 
+														</li>
+					  		
+                       			  					</div>
+												</div>
+						
+						 				 <li class="notifica_intelligente">
+											   <span class="name_notifica_intelligente">Notfadgente</span>					
+							
+											 </li>
+							</div>
+							</div>
+									</ul>
+							 </div>
+						
+							 
+				
 		
 			
 			
@@ -204,10 +440,10 @@
 			
 			 	<div class="ui-block-a">
 		
-					<div id="aule_libere" class="card" >
+					<div id="aule_libere" class="card card_widget" >
 					
 					<div id="remove_aule">
-					   <img class="media-object widget_remove" src="img/rimuovi_widget.png">
+					   <img id="remove_aule_libere_button" class="media-object widget_remove" src="img/rimuovi_widget.png">
 												
 					</div>
 					
@@ -254,7 +490,13 @@
 				
 				<!-- ------------------------------WIDGET CORSI  ---------------------------------------- -->
 			 	<div class="ui-block-b">
-					<div id="miei_corsi" class="card">
+					<div id="miei_corsi" class="card card_widget">
+					
+						<div id="remove_miei_corsi">
+					   <img id="remove_miei_corsi_button" class="media-object widget_remove" src="img/rimuovi_widget.png">
+												
+					</div>
+					
 						<ul class="person_widget table-view">
 							
 							 <li class="table-view-cell media title_widget">
@@ -293,20 +535,28 @@
 						</ul>
 					</div>
 			</div>
-			
+			</div>
 		<!-- -----------------------------WIDGET LISTA FOLLOWERS ------------------------------------->
+<div class="ui-grid-b  ui-responsive">
+			<div class="ui-block-a follower-grid">
 			
-	<div class="card">
+	<div id="widget_preferiti" class="card card_widget">
+	
+	<div id="remove_widget_preferiti">
+					   <img id="remove_widget_preferiti_button" class="media-object widget_remove" src="img/rimuovi_widget.png">
+												
+					</div>
+	
 	<ul class="table-view">
 	
 			<li class="table-view-cell title_widget follower_widget_add ">
 			      
 				   <span class="media-body preferiti_txt"><strong>Preferiti</strong></span> 
-				 <span class="pull-right icon icon-plus"></span>
+				 <span id="aggiungi_widget" class="pull-right icon icon-plus icon-plus-widget"></span>
 				 
 				
 			</li>
-			<div class="card following-list-element">
+			<div class="card card_widget following-list-element">
 						<ul class="person_widget table-view">
 							
 								<div class="ui-grid-b widgets_grid">
@@ -348,7 +598,7 @@
 						</ul>
 					</div>
 					
-				    <div class="card following-list-element">
+				    <div class="card card_widget following-list-element">
 					
 					<ul class="person_widget table-view">
 							
@@ -390,7 +640,7 @@
 						
 					</div>
 					
-					<div class="card following-list-element">
+					<div class="card card_widget following-list-element">
 						<ul class="person_widget table-view">
 							
 								<div class="ui-grid-b widgets_grid">
@@ -433,8 +683,10 @@
 					</ul>
 		</div>
 			
+			</div>
+			</div>
 			
-			<div class="card widget-container">
+			<div class="card card_widget widget-container">
 			 	  <img class="widget_add" src="img/add_widget.png">
 				</div>
 <!--
@@ -582,7 +834,7 @@
 		</div>
 	
 		
-		</div>
+		
 
 
 		
@@ -600,8 +852,10 @@
 					</span>
 				</a>
 
-				<a class="tab-item" data-ignore="push" href="cambiaStatus.html">
-					<span class="icon icon-compose"></span>
+				<a class="tab-item" data-ignore="push" href="selezionaAvvistamento.html">
+					<span class="media-object">
+						<img src="img/profMirino.png" class="followersImage">
+					</span>
 				</a>
 
 				<a class="tab-item" data-ignore="push" href="gestione_notifiche.html">
@@ -616,6 +870,7 @@
 				</a>
 
 			</nav>
+			</div>
 	<script src="js/widgets.js"></script>
 
   	</body>
