@@ -18,7 +18,7 @@
 		<link href="libs/jquery.mobile.custom/jquery.mobile.custom.theme.min.css" rel="stylesheet">
 		<link href="css/accordion.css" rel="stylesheet">
 		<link href="libs/SnapJs/snap.css" rel="stylesheet">
-		
+		<link href="css/followers.css" rel="stylesheet">
 
 
     	<!-- Include the compiled Ratchet JS -->
@@ -34,57 +34,62 @@
 	    	});
 		</script>
 		<script src="libs/jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
-		
+
 
   	</head>
   	<body>
 
 		<!-- Title bar -->
 		<header class="bar bar-nav">
-			<a id="freccia_indietro" class="icon icon-left-nav pull-left" data-ignore="push" href="ricerca.html" data-transition="slide" data-direction="reverse"></a>
-  			<h2 id= "titleNavigation" class="titleNavigation">Following Iscritti</h2>
+  			<a class="icon icon-left-nav pull-left" data-ignore="push" data-transition="slide" data-direction="reverse" href="index.html"></a>
+  			<h1 class="title">Info Mensa</h1>
 		</header>
-		<div class="snap-drawers">
-			<div id="contentoffcanvas" class="snap-drawer snap-drawer-right">
+
+
+		<div class="content">
+
+
+			<div class="card">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<img src="img/openMensa.png" class="cardOrarioMensa">
+						<h6 class="orarioMensa">12:00</h6>
+					</div>
+					<div class="ui-block-b">
+						<img src="img/closeMensa.png" class="cardOrarioMensa">
+						<h6 class="orarioMensa">14:00</h6>
+					</div>
+					<div class="ui-block-c">
+					</div>
+				</div>
+
+			</div>
+			<div class="card">
+				<div class="filter">
+					<div class="segmented-control">
+					    <a class="control-item active">Lunedi</a>
+					    <a class="control-item">Martedi</a>
+					    <a class="control-item">Mercoledi</a>
+					    <a class="control-item">Giovedi</a>
+						<a class="control-item">Venerdi</a>
+			  		</div>
+				</div>
+
+				<ul class="table-view">
+					<li class="table-view-cell table-view-divider">Primi</li>
+					<li class="table-view-cell media">Lasagne</li>
+					<li class="table-view-cell media">Pasta al ragù</li>
+
+
+					<li class="table-view-cell table-view-divider">Secondi</li>
+					<li class="table-view-cell media">Carne</li>
+					<li class="table-view-cell media">Pesce</li>
+				</ul>
 			</div>
 		</div>
-		<div id="contentmain" class="content snap-content">
 
-			<!-- Lista follower Amici -->
-			<div id="lista">
-			
-			<div class="card">
-	  			<ul class="table-view">
-	    			<li class="table-view-cell table-view-divider">Controlli Automatici</li>
-	  				<li class="table-view-cell media">
-	    				<a href="profile_visitato.html" data-ignore="push" class="navigate-right frecciaProfilo">
-		      				<img class="media-object pull-left cardImage" src="img/matteo.jpg">
-			      			<div class="media-body">Matteo Polsinelli</div>
-							<div>
-				        		<span class="labelCard">Status: </span>
-								<span class="textCard">A lezione</span>
-			      			</div>
-	    				</a>
-	  				</li>
-			  		<li class="table-view-cell media">
-			    		<a class="navigate-right">
-				      		<img class="media-object pull-left cardImage" src="img/davide.jpg">
-							<div class="media-body">Davide Giancola</div>
-							<div>
-						        <span class="labelCard">Status: </span>
-								<span class="textCard">A lezione</span>
-					      	</div>
-			    		</a>
-			  		</li>
-			  		
-	  			</ul>
-			</div>
-			
-			</div>
-
-			
 		<!-- Tab Bar -->
-				<nav class="bar bar-tab">
+			<nav class="bar bar-tab">
 	  			<a class="tab-item" data-ignore="push" href="index.html">
 	    			<span class="icon icon-home"></span>
 	  			</a>
@@ -113,6 +118,6 @@
 				</a>
 
 			</nav>
-		<link href="css/followers.css" rel="stylesheet">
+
   	</body>
 </html>

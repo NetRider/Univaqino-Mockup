@@ -1,3 +1,18 @@
+.infoposition{
+	height: 30px;
+width: 30px;
+position: absolute;
+margin-left: 9px;
+}
+
+.bordo_verde>a{
+	background-color:#ccffeb !important;
+}
+
+.bordo_verde>a{
+	
+}
+
 .accordion_card{
 	line-height: 1.5em;
 	padding: 8px 60px 7px 11px;
@@ -10,9 +25,7 @@
 	  margin-left: -29px;
     margin-right: 9px;
 }
-.bordo_verde>a{
-	border-color: #00802b !important;
-}
+
 .menu-border>ul{
 	margin-top:0px !important;
 }

@@ -5,21 +5,25 @@
 }
 
 .btn_rifiuta{
-	margin-top:10px;
+	margin-top:2px;
 	min-width:90%;
+}
+.btn_richiesta{
+	margin-top: 2px;
+padding: 4px 8px 4px;
 }
 
 .ui-block-a{
-	width:20% !important
+	width:15% !important
 }
 
 .ui-block-b{
-	width:80% !important
+	width:85% !important
 }
 
 
 .ui-block-a-button{
-	width:20% !important
+	width:15% !important
 }
 
 .ui-block-b-button{
@@ -35,12 +39,17 @@
 }
 
 .Imagefullwidth{
-	height: 40px; 
-	width:auto;
+	padding:3px;
+
 }
 
 .titolo-notifica{
 	 font-weight: bold;
+}
+
+.notifyIcon {
+
+    margin-bottom: -4px;
 }
 
 

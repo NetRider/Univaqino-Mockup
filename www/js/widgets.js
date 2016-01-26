@@ -31,6 +31,31 @@ $("#menu_btn_index").on("click",function(){
 });
 	
 function bindwidgets(){
+	
+	
+
+	$(".title_polo_widget").on( "click", function( event ) { 
+		$.mobile.changePage( "schedaPoloDaDash.html");
+		
+		
+		 } );	
+	
+	$(".following_s_image").on( "click", function( event ) { 
+		$.mobile.changePage( "listaFollowers.html");
+		
+		 } );
+
+	$(".following_p_image").on( "click", function( event ) { 
+		$.mobile.changePage( "listaFollowers.html");
+		
+		 } );
+
+	$(".mensa_image").on( "click", function( event ) { 
+		$.mobile.changePage( "menuMensaDaDash.html");
+		
+		 } );
+	
+	
 	$("#aule_libere").on( "click", function( event ) { 
 		$.mobile.changePage( "auleVicine.html");
 		
@@ -44,13 +69,7 @@ function bindwidgets(){
 		
 		 } );
 
-	
 
-	$("#polo_widget").on( "click", function( event ) { 
-		$.mobile.changePage( "schedaPoloDaDash.html");
-		
-		
-		 } );	
 };
 bindwidgets();
 	
@@ -206,6 +225,8 @@ $('.single-item-rtl').slick({
 	arrows: false,
 	  
 	});
+//////////////////////////POLO ROUTING\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
 
 
 

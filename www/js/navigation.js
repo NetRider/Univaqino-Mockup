@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+
 	$.fn.scrollTo = function( target, options, callback ){
 		  if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
 		  var settings = $.extend({
@@ -16,18 +16,31 @@ $( document ).ready(function() {
 		    });
 		  });
 		};
-
+		
+		
 	$("#P0_C1").on("click",function(){
 
 			$('#contentmain').scrollTo('#P0_C1');
+			$("#P0_C1").toggleClass("bordo_verde");
 
 		});
 
 	$("#P1_C1").on("click",function(){
 
 			$('#contentmain').scrollTo('#P1_C1');
+			$("#P1_C1").toggleClass("bordo_verde");
 
 		});
+	
+	$("#Coppito_1").on("click",function(){
+		$("#Coppito_1").toggleClass("bordo_verde");
+	});
+	
+	$("#coppito_nav").on("click",function(){
+		$("#coppito_nav").toggleClass("bordo_verde");
+	});
+
+	
 	
 	function movetoPolo(){
 
@@ -292,8 +305,14 @@ function showFollowers() {
 }
 ////////// JS LOADING FOR PAGES /////////
 $("#freccia_indietro").css("display","none");
+
+
+
 impostaAule();
+
+setTimeout(function(){ $('#contentmain').scrollTo('#P0_C1'); }, 500);
+
 
 window.addEventListener('push', checkPage);
 
-})
+
