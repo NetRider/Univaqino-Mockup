@@ -30,12 +30,25 @@ $("#menu_btn_index").on("click",function(){
 	menu_widget.close();
 });
 	
+	
+function unbindwindgets(){
+	
+	$("#miei_corsi").unbind("click");
+	$("#aule_libere").unbind("click");
+	$("#notification_widget").unbind("click");
+	$("#polo_widget").unbind("click");
+	$(".title_polo_widget").unbind("click");
+	$(".following_s_image").unbind("click");
+	$(".following_p_image").unbind("click");
+	$(".mensa_image").unbind("click");
+}	
+	
 function bindwidgets(){
 	
 	
 
 	$(".title_polo_widget").on( "click", function( event ) { 
-		$.mobile.changePage( "schedaPoloDaDash.html");
+		$.mobile.changePage("schedaPoloDaDash.html");
 		
 		
 		 } );	
@@ -129,28 +142,19 @@ bindwidgets();
 	
 	    /////////////////////////DELETE WIDGET FUNCTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 $("#aule_libere").on( "taphold", function( event ) { 
-	$("#aule_libere").unbind("click");
-	$("#miei_corsi").unbind("click");
-	$("#notification_widget").unbind("click");
-	$("#polo_widget").unbind("click");
+	unbindwindgets();
 	$("#remove_aule").css("display","block");
 	
 	 } );
 
 $("#miei_corsi").on( "taphold", function( event ) { 
-	$("#miei_corsi").unbind("click");
-	$("#aule_libere").unbind("click");
-	$("#notification_widget").unbind("click");
-	$("#polo_widget").unbind("click");
+	unbindwindgets();
 	$("#remove_miei_corsi").css("display","block");
 	
 	 } );
 
 $("#widget_preferiti").on( "taphold", function( event ) { 
-	$("#aule_libere").unbind("click");
-	$("#miei_corsi").unbind("click");
-	$("#notification_widget").unbind("click");
-	$("#polo_widget").unbind("click");
+	unbindwindgets();
 	$("#remove_widget_preferiti").css("display","block");
 	
 	 } );
