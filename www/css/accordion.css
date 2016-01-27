@@ -1,3 +1,24 @@
+a{
+	color:#000000;
+}
+
+
+header>a{
+	color:#929292 !important;
+}
+
+header>a:active, header>a:hover {
+	color:#000000 !important;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+    outline: none !important;
+} 
+
+
+
 .infoposition{
 	height: 30px;
 width: 30px;
@@ -227,6 +248,8 @@ font-size: 0.7em;
 .stretto{
 padding: 0 !important;
 }
+
+
 
 .notifyDiv {
 	margin-left: 0%;
