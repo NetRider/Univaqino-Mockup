@@ -304,10 +304,15 @@ float: right;
 .move-down{
 	padding-top: 4px;
 }
+.add_widget_title{
+	font-size:1.2em
+}
+
 .widget_div_close{
+	font-size:1.2em;
 	margin-bottom: -2px;
 	color:#000000;
-	background-color:#ff8080;
+	background-color:#bfbfbf;
 	padding: 5px 10px 5px 2px;
 }
 .select_widget{

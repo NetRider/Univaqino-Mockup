@@ -35,49 +35,149 @@
 
   	</head>
   	<body>
+		<!-- Title bar -->
 		<header class="bar bar-nav">
-			<a id="menu_btn" class="icon icon-bars pull-left"></a>
+		    <a id="menu_btn" class="icon icon-bars pull-left"></a>
 			<a class="icon icon-compose pull-right" data-ignore="push" href="cambiaStatus.html"></a>
 			<a class="icon icon-search pull-right" data-ignore="push" href="ricerca.html"></a>
-			<h2 id= "titleNavigation" class="titleNavigation">Centro Notifiche</h2>
+			<h2 class="titleNavigation">Centro Notifiche</h2>
 		</header>
+		
+			<div class="filter bar bar-standard bar-header-secondary">
+				<div class="segmented-control ">
+				    
+				    <a id="followerbar" class="control-item active">Amici</a>
+				    <a id="profbar" class="control-item">Professori</a>
+				    <a id="aulebar" class="control-item">Poli</a>
+					
+		  		</div>
+			</div>
 
+			<div id="gestione_notifiche" class="content spazio-nav">
+	  			<ul id="slippylist" class="table-view">
+	    			<li class="table-view-cell table-view-divider">Following
 
-			<div class="content spazio-nav">
+	    			<button id="cancella_notifiche" class="btn btn-negative btn_cancella">Cancella Notifiche</button>
+	    			</li>
 
-			<ul class="table-view">
-  				<li class="table-view-cell">
+		  				<li id="notifica_1" class="table-view-cell notification-list no-reorder" data-role="listview">
 
-    			   <a class="navigate-right" data-ignore="push" href="cronologia_notifiche_followers.html" data-transition="slide">
-    			   <span class="badge">10</span>
-   				   POLI
-    			   </a>
-			    </li>
-                <li class="table-view-cell">
+		    				 <div data-role="main" class="ui-content stretto">
 
-                   <a class="navigate-right" data-ignore="push" href="cronologia_notifiche_followers.html" data-transition="slide">
-                   <span class="badge">3</span>
-     				 EDIFICI
-  				   </a>
-			  </li>
- 		  	 <li class="table-view-cell">
+	   						 <div class="ui-grid-b">
+	   			 					   <div class="ui-block-a ui-block-a-button immNotifica"><span>
+	  									    <img class="media-object pull-left cardImage Imagefullwidth" src="img/matteo.jpg">
+	      								</span></div>
+	   								   <div class="ui-block-b ui-block-b-button">
+	    									  <span class="titolo-notifica">Matteo Polsinelli </span> <br>
 
-   		 			 <a class="navigate-right" data-ignore="push" href="cronologia_notifiche_followers.html" data-transition="slide">
+							    			      <div class="ui-block-c notifyDiv">
+										   <img src="img/add_friend.png" class="notifyIcon">
+										   <span class="testo-notifica">Ha chiesto di Seguirti</span>
+				      				  </div> 
+	    							  </div>
+	   								   <div class="ui-block-c ui-block-c-button">
+	   								   		<span class="center btncontainer">
+											<button class="btn btn_accetta btn_richiesta">Accetta</button>
+											<button class="btn btn_rifiuta btn_richiesta">Rifiuta</button>
+											</span>
+				      				  </div>
+	  					     </div>
+	 						 </div>
+					    </li>
 
-   		 			 <span class="badge">7</span>
-    				  FOLLOWING
-  					  </a>
-			  </li>
-			  <li class="table-view-cell">
+				  		<li id="notifica_2" class="table-view-cell notification-list ui-listview">
+				    	 <div data-role="main" class="ui-content stretto">
+	   						 <div class="ui-grid-b">
+	   			 					   <div class="ui-block-a">
+										   <span>
+	  									    <img class="media-object pull-left cardImage Imagefullwidth" src="img/davide.jpg">
+	      									</span>
+										</div>
+	   								   <div class="ui-block-b">
+	    										<span class="titolo-notifica">
+												Davide Giancola
+												</span>
+												<span class="testo-notifica">dovrebbe trovarsi in Aula 1.6 di Coppito 1 </span>
+									   </div>
+	   								   <div class="ui-block-c notifyDiv">
+										   <img src="img/launchpad.png" class="notifyIcon">
+										   <span class="testo-notifica">24 minuti fa</span>
+				      				  </div>
+	  					     	</div>
+	 						 </div>
+				  		</li>
 
-   		 			 <a class="navigate-right" data-ignore="push" href="cronologia_notifiche_followers.html" data-transition="slide">
-   		 			 	<span class="badge">6</span>
-    				  PROFESSORI
-  					  </a>
-			  </li>
-		  </ul>
+				  		<li id="notifica_3" class="table-view-cell notification-list ui-listview">
+							<div data-role="main" class="ui-content stretto">
+   	   						 <div class="ui-grid-b">
+   	   			 					   <div class="ui-block-a">
+   										   <span>
+   	  									    <img class="media-object pull-left cardImage Imagefullwidth" src="img/davide.jpg">
+   	      									</span>
+   										</div>
+   	   								   <div class="ui-block-b">
+   	    										<span class="titolo-notifica">
+   												Davide Giancola
+   												</span>
+   												<span class="testo-notifica">si è registrato nell' Aula 1.6 di Coppito 1 </span>
+   									   </div>
+   	   								   <div class="ui-block-c notifyDiv">
+										   <img src="img/check.png" class="notifyIcon">
+   										   <span class="testo-notifica">1 ora fa</span>
+   				      				  </div>
+   	  					     	</div>
+   	 						 </div>
+				  		</li>
 
+				  		<li id="notifica_4" class="table-view-cell notification-list ui-listview">
+							<div data-role="main" class="ui-content stretto">
+   						  <div class="ui-grid-b">
+   									<div class="ui-block-a">
+   										<span>
+   										 <img class="media-object pull-left cardImage Imagefullwidth" src="img/davide.jpg">
+   										 </span>
+   									 </div>
+   									<div class="ui-block-b">
+   											 <span class="titolo-notifica">
+   											 Davide Giancola
+   											 </span>
+   											 <span class="testo-notifica">è stato visto a Coppito 1 al terzo piano </span>
+   									</div>
+   									<div class="ui-block-c notifyDiv">
+										<img src="img/1persona.png" class="notifyIcon">
+   										<span class="testo-notifica">18 ora fa</span>
+   								   </div>
+   							 </div>
+   						  </div>
+				  		</li>
+
+				  		<li id="notifica_5" class="table-view-cell notification-list ui-listview">
+							<div data-role="main" class="ui-content stretto">
+   						  <div class="ui-grid-b">
+   									<div class="ui-block-a">
+   										<span>
+   										 <img class="media-object pull-left cardImage Imagefullwidth " src="img/davide.jpg">
+   										 </span>
+   									 </div>
+   									<div class="ui-block-b">
+   											 <span class="titolo-notifica">
+   											 Davide Giancola
+   											 </span>
+   											 <span class="testo-notifica">è stato visto a Coppito 1 al terzo piano </span>
+   									</div>
+   									<div class="ui-block-c notifyDiv">
+										<img src="img/3persone.png" class="notifyIcon">
+   										<span class="testo-notifica">3 giorni fa</span>
+   								   </div>
+   							 </div>
+   						  </div>
+				  		</li>
+
+	  			</ul>
+			<link href="css/gestione_notifiche.css" rel="stylesheet">
 		</div>
+
 
 			<nav class="bar bar-tab">
 	  			<a class="tab-item" data-ignore="push" href="index.html">
@@ -108,6 +208,9 @@
 				</a>
 
 			</nav>
+		<script src="libs/SlipJs/slip.js"></script>
+<script src="js/gestione_notifiche.js"></script>
+
 
   	</body>
 </html>

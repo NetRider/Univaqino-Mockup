@@ -1,16 +1,16 @@
 .btn_accetta{
-	margin-right:5px;
-	min-width:90%;
-	font-size: 10px;
+background-color: #efefef;
+	
+	
 }
 
 .btn_rifiuta{
-	margin-top:2px;
-	min-width:90%;
+
+	margin-left: 10px;
 }
 .btn_richiesta{
-	margin-top: 2px;
-padding: 4px 8px 4px;
+	
+    padding: 8px 8px 8px;
 }
 
 .ui-block-a{
@@ -27,11 +27,13 @@ padding: 4px 8px 4px;
 }
 
 .ui-block-b-button{
-	width:60% !important
+	width:40% !important
 }
 
 .ui-block-c-button{
-	width:20% !important
+	margin-left: 10px;
+	padding-top: 10px;
+	width:40% !important
 }
 
 .notification-list{
