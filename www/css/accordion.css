@@ -236,8 +236,9 @@ font-size: 0.7em;
 
 .infoFollowersNavigation
 {
-	/*background-color: green;*/
-	margin-left: 50%;
+right: 0;
+position: absolute;
+margin-right: 14px;
 }
 
 .avvistaProfButton, .avvistaProfButton:active  {
