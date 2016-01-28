@@ -1,5 +1,6 @@
-.cardImage{
-	height: 50px;
+.cardImageFollow{
+	
+	height: 63px;
 	width: auto;
 }
 
@@ -9,6 +10,37 @@
 	width:20px;
 }
 
+.header-popup{
+	background-color:#FFFFFF !important;
+	color:#000000 !important;
+}
+
+.alpha_margin{
+	margin-left: 20px;
+}
+
 .following_title{
 	margin-top: 0px !important;
+}
+
+.follow_pos_icon{
+	height:15px;
+}
+
+.follow_status_icon{
+	font-size:18px;
+	margin-left: -3px;
+}
+.follow_pos_txt{
+	margin-top:2px;
+}
+
+.grid_prof_avvistato{
+	width:20% !important
+}
+.less_padding{
+	padding: 11px 5px 11px 15px;
+}
+.grid_prof_dati{
+	width:80% !important
 }

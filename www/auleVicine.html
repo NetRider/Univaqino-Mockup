@@ -42,8 +42,31 @@
 		<!-- Title bar -->
 		<header class="bar bar-nav">
   			<a class="icon icon-left-nav pull-left" data-ignore="push" href="index.html" data-transition="slide" data-direction="reverse"></a>
-  			<h1 class="title">Aule</h1>
+  			<a href="#myPopoverAule">
+			    <h1 class="title following_title" id="titleNavigation">
+			      Aule
+			      <span id="drop_down_aule"class="icon icon-caret"></span>
+			  </h1>
+		  	</a>
 		</header>
+		
+		<div id="myPopoverAule" class="popover">
+		  <header class="bar bar-nav header-popup">
+		    <h1 class="title">Ordina per:</h1>
+		  </header>
+		  <ul class="table-view">
+		    <li class="table-view-cell alpha_margin">Libere</li>
+			<a>
+				<span class="media-object pull-left icon icon-check"></span>
+				<div class="media-body">
+	  				Vicino a me
+				</div>
+  			</a>
+		    <li class="table-view-cell"></li>
+		  </ul>
+	  	</div>
+		
+		
 		<div class="snap-drawers">
 			<div id="contentoffcanvas" class="snap-drawer snap-drawer-right">
 			</div>

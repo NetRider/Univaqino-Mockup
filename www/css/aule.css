@@ -1,7 +1,29 @@
+.labelAula{
+	font-size: 1.2em;
+}
+.following_title{
+	margin-top: 0px !important;
+}
+
+.header-popup{
+	background-color:#FFFFFF !important;
+	color:#000000 !important;
+}
+.alpha_margin{
+	margin-left: 20px;
+}
 .spazio-nav{
 	margin-bottom: 52px;
 }
 
 .labelPosizione{
-	font-size: smaller;
+	color:#595959;
+	font-size: 1em;
+}
+
+.statusAula_List{
+	position: absolute;
+right: 0;
+margin-right: 40px;
+	font-size:1em;
 }

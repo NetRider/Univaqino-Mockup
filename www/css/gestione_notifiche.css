@@ -10,13 +10,19 @@ background-color: #efefef;
 	
 }
 
+#cancella_notifiche{
+	font-weight:bold;
+	font-size:0.9em;
+}
 .btn_rifiuta{
 
 	margin-left: 10px;
 }
 .btn_richiesta{
-	
-    padding: 8px 8px 8px;
+	padding: 8px 8px 8px;
+
+font-weight: bold;
+font-size: 0.9em;
 }
 
 .ui-block-a{

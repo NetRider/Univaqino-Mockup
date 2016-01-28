@@ -1,4 +1,72 @@
+.title_widget>a{
+	color:#568E86 !important;
+}
 
+.title_polo_widget{
+	color:#568E86 !important;
+}
+
+.title_widget_no_padding{
+	color:#568E86 !important;
+}
+
+.follower_widget_add{
+	color:#568E86 !important;
+}
+
+
+.location_grid{
+	padding: 8px 0px 8px;
+}
+.polo_student{
+	 -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+	
+.polo_student:active {
+  -webkit-transform: scale3d(0.9, 0.9, 1);	
+	
+}
+
+.polo_prof{
+	 -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+	
+.polo_prof:active {
+  -webkit-transform: scale3d(0.9, 0.9, 1);	
+	
+}
+
+.polo_mesa{
+	 -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+	
+.polo_mensa:active {
+  -webkit-transform: scale3d(0.9, 0.9, 1);	
+	
+}
+
+#aule_libere{
+	 -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+	
+#aule_libere:active {
+  -webkit-transform: scale3d(0.9, 0.9, 1);	
+	
+}
+
+#miei_corsi{
+	 -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+	
+#miei_corsi:active {
+  -webkit-transform: scale3d(0.9, 0.9, 1);	
+	
+}
 
 .move-left{
 	margin-left: 20px;
@@ -49,7 +117,7 @@ display:none;
 }
 .card_widget{
 	border-radius:0px;
-	border: 3px solid #DDD;
+	border: 3px solid #E6E6E6;
 }
 
 .widget-container{
@@ -78,11 +146,41 @@ display:none;
 	height: 53px;
 }
 
+.widgetImageCorsi {
+	 
+	padding:5px;
+	width: 53px;
+	height: 53px;
+}
+
 .widgetImageNotifica {
+    padding: 10px;
+	width: 70px;
+	height: 70px;
+}
+
+.widgetImagePolo {
 	
-	
-	width: 80px;
-	height: 80px;
+    border-radius: 50%;
+    border:4px solid;
+    padding: 10px;
+	width: 70px;
+	height: 70px;
+}
+
+.polo_student{
+	background-color: #dcc909;
+	border:none;
+}
+
+.polo_prof{
+	background-color: #0ebeb8;
+	border:none;
+}
+
+.polo_mensa{
+		background-color:  #06B260;
+	border:none;
 }
 
 .fullwidth{
@@ -99,6 +197,15 @@ display:none;
 }
 .person_widget_image_notification{
 	width:80px !important;
+	padding: 5px;
+}
+
+.title_widget_no_padding{
+	font-size: 1.1em;
+	border-bottom: none;
+	font-weight:bold;
+	text-align:center;
+	padding: 3px 15px 3px 15px !important;
 }
 
 .title_widget{
@@ -130,9 +237,10 @@ text-align: center;
 	width:14px !important;
 }
 .widget_text_container_notifica{
+	position:absolute;
 	width: 80% !important;
-	margin-left: 10px;
-margin-top: 5px;
+	margin-left: 25px;
+
 }
 
 .widget_text_container{
@@ -150,6 +258,7 @@ margin-top: 5px;
 }
 
 .status_text{
+	margin-left:5px;
 	position: absolute;
 }
 
@@ -162,11 +271,16 @@ vertical-align: middle;
 float: right;
 right: 15px;
 line-height: 0.8em;
+font-weight:bold;
 }
 .icon_status{
-	font-size:18px;
+	font-size: 19px;
 }
 
+.widgeticonfol{
+	width: 16px;
+margin-left: 2px;
+}
 .image { 
    position: relative; 
    width: 100%; /* for IE 6 */
@@ -210,7 +324,7 @@ height: 18px;
 	color: #FFFFFF;
 	font-size: 1.3em;
 	text-align:center;
-	 background: #000000;
+	 background: #0E5E53;
   filter: alpha(opacity=80);
   filter: progid: DXImageTransform.Microsoft.Alpha(opacity=30);
   -moz-opacity: 0.30;
@@ -218,6 +332,7 @@ height: 18px;
 }
 
 .following-position-text{
+	margin-left:5px;
 position: absolute;
 }
 
@@ -227,13 +342,33 @@ position: absolute;
 .aule_widget_content{
 	width: 60% !important;
 	margin-top: 8px;
+	padding-left: 10px;
 }
 .badge_aule{
-	margin-left:4px;
+	
+	text-align:center;
+	width: 80%;
+	
 }
-.aule_libere_testo{
-	margin-bottom:2px;
+
+.badge_verde{
+	padding: 4px 9px 2px 10px;
+text-align: center;
+margin-bottom: 0px;
 }
+
+.icon_aule_coppito{
+	height: 20px;
+position: absolute;
+margin-left: 4px;
+}
+
+.icon_polo_coppito{
+	height: 20px;
+position: absolute;
+margin-left: 4px;
+}
+
 #remove_aule{
 	position:absolute;
 	font-size: 1.3em;
@@ -287,6 +422,10 @@ margin-top: -3px;
 	width: 70px;
 vertical-align: middle;
 float: right;
+}
+
+.grid_aule_libere{
+	margin-bottom:3px;
 }
 
 .follower-grid{

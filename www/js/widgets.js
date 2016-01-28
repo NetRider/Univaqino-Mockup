@@ -19,16 +19,33 @@ var menu_widget = new Snap({
 });
 
 $("#menucanvas_index").load("./menu.html");
+
+function bindmenu(){
 $("#menu_btn_index").on("click",function(){
 
 		menu_widget.open("left");
+		menu_widget.unbind("click");
+		$("#menu_btn_index").on("click",function(){
+
+			menu_widget.close();
+			bindmenu();
+	});
 });
+}
+bindmenu();
+
+
+
+
+
 
 /////////////////////////////////////WIDGET ACTIONS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 	$("#menucanvas_index").on("click","#close_menu",function(){
 	menu_widget.close();
 });
+	
+	
 	
 	
 function unbindwindgets(){
@@ -85,6 +102,7 @@ function bindwidgets(){
 
 };
 bindwidgets();
+
 	
 
 /////////////////////////////REMOVE REMOVE HOVER DIV \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -229,6 +247,7 @@ $('.single-item-rtl').slick({
 	arrows: false,
 	  
 	});
+
 //////////////////////////POLO ROUTING\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
