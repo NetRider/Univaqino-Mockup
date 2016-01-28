@@ -89,13 +89,14 @@ function bindwidgets(){
 	$("#aule_libere").on( "click", function( event ) { 
 		$.mobile.changePage( "auleVicine.html");
 		
-		
-		
 		 } );
 
 	$("#miei_corsi").on( "click", function( event ) { 
 		$.mobile.changePage( "corsiDaDash.html");
-		
+	     } );
+	
+	$("#single-item-rtl").on( "click", function( event ) { 
+		$("#single-item-rtl").slick("slickNext");
 		
 		 } );
 

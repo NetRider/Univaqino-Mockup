@@ -5,7 +5,7 @@
  }
 
 .tab-item-selected{
-   border-bottom: 7px solid #19A992;	
+   border-bottom: 7px solid #568E86;	
 }
 
 .ui-mobile, .ui-mobile body {
@@ -20,7 +20,13 @@ header>.title{
 header{
 	background-color:#1ABC9C !important;
 }
+.header-popup>h1{
+	color:#000000 !important;
+}
 
+.alpha-margin{
+	margin-left: 20px;
+}
 
 nav{
 	border-top: 3px solid #bfbfbf;
