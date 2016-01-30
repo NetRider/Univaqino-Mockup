@@ -18,7 +18,10 @@ function delete_notifications(){
 					$('#notifica_5').animate({left: "3000px"}, 800);
 					setTimeout(function(){
 						$('#notifica_6').animate({left: "3000px"}, 800);
-						
+						setTimeout(function(){
+							$('.notification-list').css("display","none");
+							
+							}, 50);
 						}, 50);
 					
 					}, 50);

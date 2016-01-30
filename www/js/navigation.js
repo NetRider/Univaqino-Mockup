@@ -297,11 +297,11 @@ function hideFollowers()
 }
 
 function showFollowers() {
-	$("#infoFollowersNavigation").show();
-	$("#poloCoppito0Followers").show();
-	$("#poloCoppito1Followers").show();
-	$("#poloCoppito2Followers").show();
-	$("#poloCoppito1Piano0Followers").show();
+	$("#infoFollowersNavigation").css("display","inline");
+	$("#poloCoppito0Followers").css("display","inline");
+	$("#poloCoppito1Followers").css("display","inline");
+	$("#poloCoppito2Followers").css("display","inline");
+	$("#poloCoppito1Piano0Followers").css("display","inline");
 }
 ////////// JS LOADING FOR PAGES /////////
 $("#freccia_indietro").css("display","none");

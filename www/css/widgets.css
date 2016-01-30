@@ -14,10 +14,14 @@
 	color:#568E86 !important;
 }
 
-
-.location_grid{
-	padding: 8px 0px 8px;
+.title_widget{
+	font-size:1.1em;
 }
+.location_grid{
+	padding: 0px 0px 8px;
+}
+
+
 .polo_student{
 	 -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent;
@@ -38,6 +42,11 @@
 	
 }
 
+.notifica_grid{
+	border-left:1px solid #f2f2f2;
+	border-right:1px solid #f2f2f2;
+}
+
 .polo_mesa{
 	 -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent;
@@ -49,24 +58,62 @@
 }
 
 #aule_libere{
+	margin: 0px 5px 0px 10px;
 	 -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent;
 }
 	
-#aule_libere:active {
+#aule_libere:active , .activate_widget{
   -webkit-transform: scale3d(0.9, 0.9, 1);	
 	
 }
 
-#miei_corsi{
+#aggiungi_aule_libere{
+	margin:10px 5px 0px 10px;
 	 -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent;
 }
 	
-#miei_corsi:active {
+#aggiungi_aule_libere:active {
   -webkit-transform: scale3d(0.9, 0.9, 1);	
 	
 }
+
+
+#miei_corsi{
+	margin: 0px 10px 0px 5px;
+	 -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+	
+#miei_corsi:active, .activate_widget {
+  -webkit-transform: scale3d(0.9, 0.9, 1);	
+	
+}
+
+#aggiungi_miei_corsi{
+	margin: 10px 10px 0px 5px;
+	 -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+	
+#aggiungi_miei_corsi:active {
+  -webkit-transform: scale3d(0.9, 0.9, 1);	
+	
+}
+
+#aggiungi_widget_preferiti{
+	
+	 -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+	
+#aggiungi_widget_preferiti:active {
+  -webkit-transform: scale3d(0.9, 0.9, 1);	
+	
+}
+
+
 
 .move-left{
 	margin-left: 20px;
@@ -99,13 +146,16 @@ display:none;
 .slider{
 	    background-color: #FFFFFF;
 }
-}
-.location_grid{
-	padding:5px;
-}
 
 .widget_add{
-	height:50px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+	height:70px;
+	margin-top:20px;
+}
+
+.widget_add:active{
+  -webkit-transform: scale3d(0.9, 0.9, 1);	
 }
 
 .clock_widget{
@@ -117,7 +167,7 @@ display:none;
 }
 .card_widget{
 	border-radius:0px;
-	border: 3px solid #E6E6E6;
+	border: 2px solid #cccccc;
 }
 
 .widget-container{
@@ -125,6 +175,13 @@ display:none;
 	border:none
 }
 
+.widget-container-add{
+		background-color:#eff6f4;
+}
+
+#contentmain_widget{
+	background-color:#eff6f4;
+}
 
 .widgets_grid{
 
@@ -433,8 +490,8 @@ float: right;
 }
 
 .widgeticon_small{
-	height:20px;
-	width:20px;
+	width: 14px;
+margin-left: 21px;
 }
 .widgetImage_small{
 	height:35px;
@@ -448,12 +505,21 @@ float: right;
 }
 
 .widget_div_close{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
 	font-size:1.2em;
 	margin-bottom: -2px;
-	color:#000000;
-	background-color:#bfbfbf;
+	color:#FFFFFF;
+	background-color:#568E86;
 	padding: 5px 10px 5px 2px;
+
 }
+
+.widget_div_close:active{
+	background-color:#3a5f5a;
+}
+
+
 .select_widget{
 	border-color:#a6a6a6;
 }

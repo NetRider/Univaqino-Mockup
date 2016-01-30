@@ -1,5 +1,27 @@
+#contentmain_widget{
+	background-color:#eff6f4;
+}
 
- 
+.ui-body-inherit{
+	background-color:#eff6f4 !important;
+}
+
+.content{
+	background-color:#eff6f4;
+}
+
+.bar-header-secondary{
+	background-color: #19b395;;
+	}
+.segmented-control{
+	border: 1px solid #999999;
+}
+
+
+ .icon-pages_polo{
+ margin-left: 3px;
+margin-right: 7px !important;
+ }
  .icon_profilo_utente{
  font-size:19px !important;
  }
@@ -18,14 +40,19 @@ header>.title{
 	color:#FFFFFF;
 }
 header{
+	border-bottom: 1px solid #169d82 !important;
 	background-color:#1ABC9C !important;
 }
 .header-popup>h1{
 	color:#000000 !important;
 }
 
+.header-popup{
+	border-bottom: 1px solid #ddd !important;
+}
+
 .alpha-margin{
-	margin-left: 20px;
+	padding-left: 35px;
 }
 
 nav{
@@ -38,14 +65,17 @@ a{
 }
 
 header>a{
+	
 	color:#FFFFFF !important;
 }
 
-header>a:active, header>a:hover {
+header>a:active {
+	
 	color:#929292 !important;
 }
 
 * {
+
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
     -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
     outline: none !important;
@@ -304,9 +334,17 @@ font-size: 0.7em;
 	height: 30px;
 }
 
+.followersImage:active{
+	  -webkit-transform: scale3d(0.9, 0.9, 1);
+}
+.icon-home:active{
+	 -webkit-transform: scale3d(0.9, 0.9, 1);
+}
 .profInUfficio {
 	margin-top: 19px;
 }
+
+
 
 .infoFollowersNavigation
 {

@@ -22,6 +22,9 @@
        
 		<link href="css/profile.css" rel="stylesheet">
 
+<link href="libs/web-pull/base.css" rel="stylesheet">
+<link href="libs/web-pull/lib/genericons/genericons.css" rel="stylesheet">
+
     	<!-- Include the compiled Ratchet JS -->
     	<script src="libs/ratchet-v2.0.2/js/ratchet.js"></script>
 		<script src="libs/jquery-1.12.0.min.js"></script>
@@ -40,9 +43,8 @@
       
 		<link href="css/accordion.css" rel="stylesheet">
         <link href="css/widgets.css" rel="stylesheet">
-         <link href="libs/slick/slick.css" rel="stylesheet"> 
-          
-	
+        <link href="libs/slick/slick.css" rel="stylesheet"> 
+      
         
   	</head>
   	<body>
@@ -228,8 +230,18 @@
 			<h2 class="titleNavigation">Università dell'Aquila</h2>
 		</header>
 
+<div id="ptr">
+  <!-- Pull down arrow indicator -->
 
-		<div id="contentmain_widget" class="content snap-content hassubnav spazio-nav">
+  <!-- CSS-based loading indicator -->
+  <div class="loading">
+    <span id="l1"></span>
+    <span id="l2"></span>
+    <span id="l3"></span>
+  </div>
+</div>
+
+		<div id="content" class="content snap-content hassubnav spazio-nav">
 
 <!-- ------------------------------------------_WIDGET POLO -------------------------------------- -->
 
@@ -280,7 +292,7 @@
 						</div>
 						
 						  <li class="notifica_intelligente">
-							   <span class="name_notifica_intelligente">Aperta fino alle 20:00</span>					
+							   <span class="name_notifica_intelligente">Aperto fino alle 20:00</span>					
 							
 							 </li>
 							
@@ -308,7 +320,7 @@
 				
 						        	<div>
 							 
-										<div data-snap-ignore="true" class="ui-grid-b widgets_grid">
+										<div data-snap-ignore="true" class="ui-grid-b widgets_grid notifica_grid">
 								
 								   					  <div  class="ui-block-a person_widget_image_notification">
 							        
@@ -366,7 +378,7 @@
 							  	
 							  	<div>
 										 
-												<div class="ui-grid-b widgets_grid">
+												<div class="ui-grid-b widgets_grid notifica_grid">
 								
 								   					  <div  class="ui-block-a person_widget_image_notification">
 							        
@@ -703,8 +715,8 @@
 			</div>
 			</div>
 			
-			<div class="card card_widget widget-container">
-			 	  <img class="widget_add" src="img/add_widget.png">
+			<div class="card card_widget widget-container widget-container-add">
+			 	  <img class="widget_add" ontouchstart="return true;" src="img/add_widget.png">
 				</div>
 <!--
 
@@ -888,8 +900,10 @@
 
 			</nav>
 			</div>
-	<script src="js/widgets.js"></script>
 
+  <script src="libs/web-pull/lib/hammer.2.0.4.js"></script>
+        <script src="libs/web-pull/lib/wptr.1.1.js"></script>
+		<script src="js/widgets.js"></script>
   	</body>
 
 </html>

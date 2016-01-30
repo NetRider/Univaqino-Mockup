@@ -35,6 +35,16 @@ $("#menu_btn_index").on("click",function(){
 bindmenu();
 
 
+menu_widget.on('animated', function(){
+	if(menu_widget.state().state=="left"){
+		$("#content").css("opacity","0.3");
+	}
+	else{
+		$("#content").css("opacity","1");
+	}
+	
+	});
+
 
 
 
@@ -113,6 +123,7 @@ bindwidgets();
 	             if(e.target.id !== "remove_aule")
 	                   {
 	            	      $("#remove_aule").css("display","none");
+	            	      $("#aule_libere").removeClass("activate_widget");
 	            	     // $("#aule_libere").css("display","none");
 	                      bindwidgets();
 	                   }
@@ -121,6 +132,7 @@ bindwidgets();
             if(e.target.id !== "remove_miei_corsi")
                   {
             	$("#remove_miei_corsi").css("display","none");
+            	  $("#miei_corsi").removeClass("activate_widget");
             	//$("#miei_corsi").css("display","none");
             	bindwidgets();
             	}
@@ -130,6 +142,7 @@ bindwidgets();
             if(e.target.id !== "remove_widget_preferiti")
                   {
             	$("#remove_widget_preferiti").css("display","none");
+            	  $("#widget_preferiti").css("-webkit-transform","scale3d(1, 1, 1)");
             	//$("#widget_preferiti").css("display","none");
             	bindwidgets();
             	}
@@ -160,21 +173,36 @@ bindwidgets();
 	}, 1000);
 	
 	    /////////////////////////DELETE WIDGET FUNCTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	    $.event.special.tap.tapholdThreshold=550;	    
+	    
 $("#aule_libere").on( "taphold", function( event ) { 
 	unbindwindgets();
+	$("#aule_libere").addClass("activate_widget");
 	$("#remove_aule").css("display","block");
 	
 	 } );
 
 $("#miei_corsi").on( "taphold", function( event ) { 
 	unbindwindgets();
+	$("#miei_corsi").addClass("activate_widget");
 	$("#remove_miei_corsi").css("display","block");
 	
 	 } );
 
+
+
 $("#widget_preferiti").on( "taphold", function( event ) { 
 	unbindwindgets();
-	$("#remove_widget_preferiti").css("display","block");
+	
+	$("#widget_preferiti").css("-webkit-transform","scale3d(0.90, 0.90, 1)");
+	
+   
+	
+    setTimeout(function(){ 
+    	 $("#remove_widget_preferiti").css("display","block");
+    
+    }, 300);
+	
 	
 	 } );
 
@@ -249,7 +277,23 @@ $('.single-item-rtl').slick({
 	  
 	});
 
-//////////////////////////POLO ROUTING\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//////////////////////////REFRESH PAGE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+var exampleLoadingFunction = function() {
+	  return new Promise( function( resolve, reject ) {
+	    // Run some async loading code here
+	      resolve();
+	   
+	      reject();
+	    
+	  } );
+	};
+	
+
+	WebPullToRefresh.init( {
+	    loadingFunction: exampleLoadingFunction
+	} );
 
 
 
